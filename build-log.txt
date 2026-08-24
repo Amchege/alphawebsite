@@ -1,0 +1,73 @@
+﻿   Γû▓ Next.js 15.5.23
+
+   Creating an optimized production build ...
+node.exe : Found 4 warnings while optimizing generated CSS:
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Found 4 warning... generated CSS::Str    ing) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Issue #1:
+[2mΓöé   }[22m
+[2mΓöé }[22m
+[2mΓöé[22m // ============================================================
+[2mΓöå[22m [33m[2m^--[22m Invalid empty selector[39m
+[2mΓöå[22m
+[2mΓöé // APP: /app/globals.css (additions)
+[22m
+[2mΓöé // ============================================================
+[22m
+
+Issue #2:
+[2mΓöé   opacity: 0;[22m
+[2mΓöé }[22m
+[2mΓöé[22m // ============================================================
+[2mΓöå[22m [33m[2m^--[22m Invalid empty selector[39m
+[2mΓöå[22m
+[2mΓöé // APP: /app/globals.css (additions)
+[22m
+[2mΓöé // ============================================================
+[22m
+
+Issue #3:
+[2mΓöé   opacity: 1;[22m
+[2mΓöé }[22m
+[2mΓöé[22m // ============================================================
+[2mΓöå[22m [33m[2m^--[22m Invalid empty selector[39m
+[2mΓöå[22m
+[2mΓöé // APP: /app/globals.css (additions)
+[22m
+[2mΓöé // ============================================================
+[22m
+
+Issue #4:
+[2mΓöé   opacity: 1;[22m
+[2mΓöé }[22m
+[2mΓöé[22m // ============================================================
+[2mΓöå[22m [33m[2m^--[22m Invalid empty selector[39m
+[2mΓöå[22m
+[2mΓöé // APP: /app/globals.css (additions)
+[22m
+[2mΓöé // ============================================================
+[22m
+
+ Γ£ô Compiled successfully in 44s
+   Linting and checking validity of types ...
+Failed to compile.
+
+./src/app/solutions/[slug]/page.tsx:134:39
+Type error: Object is possibly 'undefined'.
+
+[0m [90m 132 |[39m                   [33m<[39m[33m/[39m[33mLinkButton[39m[33m>[39m
+ [90m 133 |[39m                   {relatedProjects[33m.[39mlength [33m>[39m [35m0[39m [33m&&[39m (
+[31m[1m>[22m[39m[90m 134 |[39m                     [33m<[39m[33mLinkButton[39m 
+href[33m=[39m{relatedProjects[[35m0[39m][33m.[39mslug [33m?[39m 
+[32m`/projects/${relatedProjects[0].slug}`[39m [33m:[39m [32m"/projects"[39m} 
+variant[33m=[39m[32m"secondary"[39m size[33m=[39m[32m"lg"[39m[33m>[39m
+ [90m     |[39m                                       [31m[1m^[22m[39m
+ [90m 135 |[39m                       [33mSee[39m [33mRelated[39m [33mProjects[39m
+ [90m 136 |[39m                     [33m<[39m[33m/[39m[33mLinkButton[39m[33m>[39m
+ [90m 137 |[39m                   )}[0m
+Next.js build worker exited with code: 1 and signal: null

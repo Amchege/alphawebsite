@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+/* ============================================================
+   DESIGN TOKENS
+   Centralized brand colors, typography, and spacing.
+   Change values here to update the entire site.
+   ============================================================ */
+
+@theme {
+  /* Primary — Royal Blue */
+  --color-primary: #1E3A8A;
+  --color-primary-hover: #1E40AF;
+  --color-primary-light: #EFF6FF;
+  --color-primary-foreground: #FFFFFF;
+
+  /* Accent — Orange */
+  --color-accent: #EA580C;
+  --color-accent-hover: #C2410C;
+  --color-accent-light: #FFF7ED;
+  --color-accent-foreground: #FFFFFF;
+
+  /* Neutral — Slate-based for professional tone */
+  --color-background: #FFFFFF;
+  --color-foreground: #0F172A;
+  --color-muted: #F1F5F9;
+  --color-muted-foreground: #64748B;
+  --color-border: #E2E8F0;
+  --color-card: #FFFFFF;
+  --color-card-foreground: #0F172A;
+
+  /* Typography — loaded via next/font, fallback stack */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ============================================================
+   BASE LAYER
+   ============================================================ */
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Visible focus for keyboard navigation */
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
+  /* Remove default focus outline for mouse users */
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* Reduced motion: disable non-essential animations */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* ============================================================
+   UTILITY LAYER
+   ============================================================ */
+
+@layer utilities {
+  /* Balanced text wrapping for headings */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Prevent text selection on interactive elements */
+  .no-select {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+}
+
+/* ─── Insights-specific animations ─── */
+
+@keyframes scanLine {
+  0%, 100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(400%);
+  }
+}
+
+/* ─── Reduced motion: disable all non-essential animations ─── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ─── Article content typography refinements ─── */
+.prose-custom h2 {
+  scroll-margin-top: 6rem;
+}
+
+.prose-custom h3 {
+  scroll-margin-top: 6rem;
+}
+
+/* ─── Custom scrollbar for code blocks ─── */
+.overflow-x-auto::-webkit-scrollbar {
+  height: 6px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.3);
+  border-radius: 3px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.5);
+}
+
+/* ─── Focus visible states ─── */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid rgba(59, 130, 246, 0.6);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
