@@ -28,6 +28,7 @@ export interface Project {
   id: string;
   title: string;
   slug: string;
+  liveUrl?: string;
   shortTitle?: string;
   shortDescription: string;
   longDescription: string;

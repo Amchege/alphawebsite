@@ -22,9 +22,6 @@ export function FeaturedProjects() {
     .map((slug) => projects.find((p) => p.slug === slug))
     .filter(Boolean);
 
-  const featured = orderedProjects[0];
-  const rest = orderedProjects.slice(1);
-
   return (
     <Section className="bg-muted/40 relative overflow-hidden">
       <TechnicalGrid opacity={0.02} className="z-0" />
@@ -39,22 +36,15 @@ export function FeaturedProjects() {
         </p>
         <LineReveal className="mt-6 max-w-xs" />
 
-        <div className="mt-12 space-y-6">
-          {featured && (
-            <ScaleReveal>
-              <ProjectCard project={featured} variant="featured" />
-            </ScaleReveal>
+        {/* UNIFORM 2x2 GRID */}
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
+          {orderedProjects.map((project) =>
+            project ? (
+              <ScaleReveal key={project.slug} delay={0.1}>
+                <ProjectCard project={project} variant="standard" />
+              </ScaleReveal>
+            ) : null
           )}
-
-          <div className="grid gap-6 md:grid-cols-2">
-            {rest.map((project) =>
-              project ? (
-                <ScaleReveal key={project.slug} delay={0.1}>
-                  <ProjectCard project={project} variant="standard" />
-                </ScaleReveal>
-              ) : null
-            )}
-          </div>
         </div>
 
         <ScrollReveal>
