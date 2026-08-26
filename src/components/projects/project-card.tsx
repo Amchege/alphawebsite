@@ -81,7 +81,7 @@ export function ProjectCard({
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="transition-transform duration-200 hover:translate-x-0.5"><path d="M1 7h12m0 0L8 2m5 5L8 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
               </Link>
               {project.liveUrl && project.liveUrl !== "#" && (
-                <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground border border-border px-3 py-1 rounded-md hover:border-primary/30 hover:text-primary transition-colors">
+                <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-sm font-medium text-accent border-2 border-accent px-4 py-1.5 rounded-md hover:bg-accent hover:text-white transition-all duration-200 ml-3">
                   Visit Live Portal <ExternalLink size={14} />
                 </a>
               )}
@@ -122,7 +122,7 @@ export function ProjectCard({
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="transition-transform duration-200 hover:translate-x-0.5"><path d="M1 7h12m0 0L8 2m5 5L8 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
               </Link>
               {project.liveUrl && project.liveUrl !== "#" && (
-                <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground border border-border px-3 py-1 rounded-md hover:border-primary/30 hover:text-primary transition-colors">
+                <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-sm font-medium text-accent border-2 border-accent px-4 py-1.5 rounded-md hover:bg-accent hover:text-white transition-all duration-200 ml-3">
                   Visit Live Portal <ExternalLink size={14} />
                 </a>
               )}
