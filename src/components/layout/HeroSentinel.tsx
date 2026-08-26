@@ -1,3 +1,3 @@
-export function HeroSentinel() {
+ export function HeroSentinel() {
   return null;
 }
