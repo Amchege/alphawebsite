@@ -2,6 +2,8 @@ import { MetadataRoute } from 'next';
 import { getAllInsights } from '@/lib/insights/content';
 import { INSIGHTS_CATEGORIES } from '@/lib/insights/constants';
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://alphatecsolutions.com';
   const insights = getAllInsights();

@@ -1,4 +1,4 @@
-﻿import { Metadata } from 'next';
+import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getInsightsByCategory, getCategoryBySlug, getAllInsights } from '@/lib/insights/content';
@@ -21,7 +21,7 @@ const CAT_SOLUTION_MAP: Record<string, string[]> = {
 };
 
 export async function generateStaticParams() {
-  return getAllInsights().map((a) => ({ slug: a.slug }));
+  return INSIGHTS_CATEGORIES.map((c) => ({ slug: c.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {

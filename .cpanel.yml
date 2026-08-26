@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - subprocess: |
+        rsync -a --delete out/ ${DEPLOYMENT_DIR}
