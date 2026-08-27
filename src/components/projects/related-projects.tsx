@@ -21,18 +21,30 @@ export function RelatedProjects({ projects }: RelatedProjectsProps) {
               href={`/projects/${project.slug}/`}
               className="block h-full"
             >
-              <div className="flex items-center justify-center border-b border-border bg-muted/30 py-8">
-                <div className="text-center">
-                  <ImagePlus
-                    size={22}
-                    className="mx-auto text-muted-foreground/25"
-                    strokeWidth={1.5}
+              {project.heroImage ? (
+                <div className="relative overflow-hidden border-b border-border">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={project.heroImage.src}
+                    alt={project.heroImage.alt}
+                    className="h-40 w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <p className="mt-1.5 text-[10px] font-mono uppercase tracking-wider text-muted-foreground/40">
-                    Preview
-                  </p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
                 </div>
-              </div>
+              ) : (
+                <div className="flex items-center justify-center border-b border-border bg-muted/30 py-8">
+                  <div className="text-center">
+                    <ImagePlus
+                      size={22}
+                      className="mx-auto text-muted-foreground/25"
+                      strokeWidth={1.5}
+                    />
+                    <p className="mt-1.5 text-[10px] font-mono uppercase tracking-wider text-muted-foreground/40">
+                      Preview
+                    </p>
+                  </div>
+                </div>
+              )}
               <div className="p-5">
                 <div className="flex items-center justify-between">
                   <MonospaceLabel>

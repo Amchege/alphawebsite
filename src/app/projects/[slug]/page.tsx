@@ -70,53 +70,31 @@ export default async function ProjectDetailPage({ params }: PageProps) {
         })}
       />
 
-      {/* ===== CINEMATIC DARK HERO ===== */}
-      <Section className="relative overflow-hidden pt-32 pb-16 md:pt-36 md:pb-20 min-h-[520px] md:min-h-[600px] flex items-center">
-        {/* Base dark fill */}
-        <div className="absolute inset-0 bg-blue-950" />
-
-        {/* Hero image layer */}
-        {project.heroImage && (
-          <div className="absolute inset-0">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={project.heroImage.src}
-              alt={project.heroImage.alt}
-              className="h-full w-full object-cover opacity-25"
-            />
-          </div>
-        )}
-
-        {/* Gradient overlays for depth */}
-        <div className="absolute inset-0 bg-gradient-to-t from-blue-950 via-blue-950/70 to-blue-950/50" />
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-950/80 via-transparent to-blue-950/60" />
-
-        {/* Subtle blue accent glow */}
-        <div className="absolute bottom-0 left-1/4 h-96 w-96 rounded-full bg-primary/10 blur-3xl" aria-hidden="true" />
-
-        <Container className="relative z-10">
+      {/* ===== HERO ===== */}
+      <Section className="pt-32 pb-0 md:pt-36">
+        <Container>
           <Breadcrumb
             items={[
               { label: "Home", href: "/" },
               { label: "Projects", href: "/projects/" },
               { label: project.title },
             ]}
-            className="mb-8 [&_a]:text-white/60 [&_a:hover]:text-white [&>*:last-child]:text-white/40"
+            className="mb-8"
           />
 
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-14">
-            {/* Text column */}
+            {/* Text */}
             <div>
               <ScrollReveal>
-                <MonospaceLabel className="text-primary/90">Case Study</MonospaceLabel>
+                <MonospaceLabel>Case Study</MonospaceLabel>
               </ScrollReveal>
               <ScrollReveal delay={0.05}>
-                <h1 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-[2.75rem] text-balance leading-[1.1] drop-shadow-sm">
+                <h1 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-[2.75rem] text-balance">
                   {project.title}
                 </h1>
               </ScrollReveal>
               <ScrollReveal delay={0.1}>
-                <p className="mt-4 text-lg text-white/70 leading-relaxed">
+                <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
                   {project.shortDescription}
                 </p>
               </ScrollReveal>
@@ -125,37 +103,37 @@ export default async function ProjectDetailPage({ params }: PageProps) {
               <ScrollReveal delay={0.15}>
                 <div className="mt-8 grid grid-cols-2 gap-x-6 gap-y-4">
                   <div>
-                    <MonospaceLabel className="text-white/50">Industry</MonospaceLabel>
-                    <p className="mt-1 text-sm font-medium text-white/90">
+                    <MonospaceLabel>Industry</MonospaceLabel>
+                    <p className="mt-1 text-sm font-medium text-foreground">
                       {project.industry}
                     </p>
                   </div>
                   <div>
-                    <MonospaceLabel className="text-white/50">Type</MonospaceLabel>
-                    <p className="mt-1 text-sm font-medium text-white/90">
+                    <MonospaceLabel>Type</MonospaceLabel>
+                    <p className="mt-1 text-sm font-medium text-foreground">
                       {project.projectType}
                     </p>
                   </div>
                   {project.frontendTechnologies.length > 0 && (
                     <div>
-                      <MonospaceLabel className="text-white/50">Frontend</MonospaceLabel>
-                      <p className="mt-1 text-sm font-medium text-white/90">
+                      <MonospaceLabel>Frontend</MonospaceLabel>
+                      <p className="mt-1 text-sm font-medium text-foreground">
                         {project.frontendTechnologies.join(", ")}
                       </p>
                     </div>
                   )}
                   {project.backendTechnologies.length > 0 && (
                     <div>
-                      <MonospaceLabel className="text-white/50">Backend</MonospaceLabel>
-                      <p className="mt-1 text-sm font-medium text-white/90">
+                      <MonospaceLabel>Backend</MonospaceLabel>
+                      <p className="mt-1 text-sm font-medium text-foreground">
                         {project.backendTechnologies.join(", ")}
                       </p>
                     </div>
                   )}
                   {project.databaseTechnologies.length > 0 && (
                     <div>
-                      <MonospaceLabel className="text-white/50">Database</MonospaceLabel>
-                      <p className="mt-1 text-sm font-medium text-white/90">
+                      <MonospaceLabel>Database</MonospaceLabel>
+                      <p className="mt-1 text-sm font-medium text-foreground">
                         {project.databaseTechnologies.join(", ")}
                       </p>
                     </div>
@@ -164,18 +142,13 @@ export default async function ProjectDetailPage({ params }: PageProps) {
               </ScrollReveal>
             </div>
 
-            {/* Visual column */}
+            {/* Visual */}
             <ScrollReveal delay={0.15} className="hidden lg:block">
               <ProjectDetailVisual steps={project.systemFlow} />
             </ScrollReveal>
           </div>
         </Container>
       </Section>
-
-      {/* ===== GLOWING TRANSITION DIVIDER ===== */}
-      <div className="relative h-px w-full overflow-hidden bg-border z-10">
-        <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-primary to-transparent animate-[shimmer_3s_ease-in-out_infinite]" style={{ animationDelay: '1s' }} />
-      </div>
 
       {/* ===== OVERVIEW ===== */}
       <Section className="py-12 md:py-16">
@@ -193,35 +166,31 @@ export default async function ProjectDetailPage({ params }: PageProps) {
         </Container>
       </Section>
 
-      {/* ===== CHALLENGE ===== */}
+      {/* ===== CHALLENGE + SOLUTION SIDE BY SIDE ===== */}
       <Section className="py-12 md:py-16 bg-muted/40">
         <Container>
-          <div className="mx-auto max-w-3xl">
+          <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
             <ScrollReveal>
-              <MonospaceLabel className="text-accent">The Challenge</MonospaceLabel>
-              <h2 className="mt-3 text-2xl font-bold tracking-tight text-foreground sm:text-3xl text-balance">
-                What problem needed to be solved
-              </h2>
-              <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                {project.challenge}
-              </p>
+              <div className="rounded-xl border border-border bg-card p-6 sm:p-8 h-full">
+                <MonospaceLabel className="text-accent">The Challenge</MonospaceLabel>
+                <h2 className="mt-3 text-xl font-bold tracking-tight text-foreground sm:text-2xl text-balance">
+                  What problem needed to be solved
+                </h2>
+                <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                  {project.challenge}
+                </p>
+              </div>
             </ScrollReveal>
-          </div>
-        </Container>
-      </Section>
-
-      {/* ===== SOLUTION ===== */}
-      <Section className="py-12 md:py-16">
-        <Container>
-          <div className="mx-auto max-w-3xl">
-            <ScrollReveal>
-              <MonospaceLabel className="text-primary">The Solution</MonospaceLabel>
-              <h2 className="mt-3 text-2xl font-bold tracking-tight text-foreground sm:text-3xl text-balance">
-                How the system addresses it
-              </h2>
-              <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                {project.solution}
-              </p>
+            <ScrollReveal delay={0.1}>
+              <div className="rounded-xl border border-border bg-card p-6 sm:p-8 h-full">
+                <MonospaceLabel className="text-primary">The Solution</MonospaceLabel>
+                <h2 className="mt-3 text-xl font-bold tracking-tight text-foreground sm:text-2xl text-balance">
+                  How the system addresses it
+                </h2>
+                <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                  {project.solution}
+                </p>
+              </div>
             </ScrollReveal>
           </div>
         </Container>
@@ -229,7 +198,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
 
       {/* ===== FEATURES ===== */}
       {project.features.length > 0 && (
-        <Section className="py-12 md:py-16 bg-muted/40">
+        <Section className="py-12 md:py-16">
           <Container>
             <ScrollReveal>
               <MonospaceLabel className="text-primary">Key Features</MonospaceLabel>
@@ -246,7 +215,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
 
       {/* ===== WORKFLOW ===== */}
       {project.workflow.length > 0 && (
-        <Section className="py-12 md:py-16">
+        <Section className="py-12 md:py-16 bg-muted/40">
           <Container>
             <div className="grid gap-12 lg:grid-cols-2">
               <div>
@@ -269,7 +238,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       )}
 
       {/* ===== ARCHITECTURE ===== */}
-      <Section className="py-12 md:py-16 bg-muted/40">
+      <Section className="py-12 md:py-16">
         <Container>
           <ScrollReveal>
             <div className="text-center mb-10">
@@ -284,7 +253,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       </Section>
 
       {/* ===== TECHNOLOGY ===== */}
-      <Section className="py-12 md:py-16">
+      <Section className="py-12 md:py-16 bg-muted/40">
         <Container>
           <ScrollReveal>
             <MonospaceLabel className="text-primary">Tech Stack</MonospaceLabel>
@@ -298,9 +267,9 @@ export default async function ProjectDetailPage({ params }: PageProps) {
         </Container>
       </Section>
 
-      {/* ===== SYSTEM SHOWCASE ===== */}
+      {/* ===== SYSTEM SHOWCASE — video with image fallback ===== */}
       {project.heroImage && (
-        <Section className="py-12 md:py-16 bg-muted/40">
+        <Section className="py-12 md:py-16">
           <Container>
             <ScrollReveal>
               <div className="text-center mb-10">
@@ -312,12 +281,31 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
               <div className="relative overflow-hidden rounded-xl border border-border shadow-2xl shadow-black/10">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={project.heroImage.src}
-                  alt={project.heroImage.alt}
-                  className="w-full h-auto object-cover"
-                />
+                {project.showcaseVideo ? (
+                  <video
+                    src={project.showcaseVideo}
+                    poster={project.heroImage.src}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="w-full h-auto object-cover"
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={project.heroImage.src}
+                      alt={project.heroImage.alt}
+                      className="w-full h-auto object-cover"
+                    />
+                  </video>
+                ) : (
+                  /* eslint-disable-next-line @next/next/no-img-element */
+                  <img
+                    src={project.heroImage.src}
+                    alt={project.heroImage.alt}
+                    className="w-full h-auto object-cover"
+                  />
+                )}
               </div>
             </ScrollReveal>
           </Container>
@@ -326,7 +314,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
 
       {/* ===== BUSINESS VALUE ===== */}
       {project.valuePoints.length > 0 && (
-        <Section className="py-12 md:py-16">
+        <Section className="py-12 md:py-16 bg-muted/40">
           <Container>
             <div className="mx-auto max-w-3xl">
               <ScrollReveal>
@@ -356,7 +344,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
 
       {/* ===== FUTURE IMPROVEMENTS ===== */}
       {project.futureImprovements.length > 0 && (
-        <Section className="py-12 md:py-16 bg-muted/40">
+        <Section className="py-12 md:py-16">
           <Container>
             <div className="mx-auto max-w-3xl">
               <ScrollReveal>
@@ -385,7 +373,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
 
       {/* ===== RELATED PROJECTS ===== */}
       {relatedProjects.length > 0 && (
-        <Section className="py-12 md:py-16">
+        <Section className="py-12 md:py-16 bg-muted/40">
           <Container>
             <ScrollReveal>
               <MonospaceLabel className="text-primary">Explore More</MonospaceLabel>

@@ -57,6 +57,7 @@ export interface Project {
 
   screenshots: MediaAsset[];
   heroImage: MediaAsset | null;
+  showcaseVideo?: string;
   architectureImage: MediaAsset | null;
 
   results: ProjectResult[];

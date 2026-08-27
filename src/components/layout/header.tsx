@@ -72,7 +72,7 @@ export function Header() {
     href === '/' ? pathname === '/' : pathname.startsWith(href);
 
   /* Dark hero pages */
- const darkHeroPaths = ['/', '/projects', '/insights', '/contact'];
+ const darkHeroPaths = ['/', '/insights', '/contact'];
 const isDarkHero = darkHeroPaths.some((p) => {
   if (p === '/') return pathname === '/';
   return pathname.startsWith(p);
