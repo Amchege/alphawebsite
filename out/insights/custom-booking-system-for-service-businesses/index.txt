@@ -1,0 +1,459 @@
+1:"$Sreact.fragment"
+2:I[45872,["/_next/static/chunks/25lbyser11m44.js"],"Header"]
+3:I[39756,["/_next/static/chunks/25lbyser11m44.js"],"default"]
+4:I[37457,["/_next/static/chunks/25lbyser11m44.js"],"default"]
+5:I[22016,["/_next/static/chunks/25lbyser11m44.js"],""]
+d:I[68027,["/_next/static/chunks/25lbyser11m44.js"],"default",1]
+:HL["/_next/static/chunks/1e60l9o4mkd24.css","style"]
+:HL["/_next/static/chunks/2hjepq11b4wp9.css","style"]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.2bn3s6zvc0dyp.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+b:X
+0:{"P":null,"c":["","insights","custom-booking-system-for-service-businesses",""],"q":"","i":false,"f":[[["",{"children":["insights",{"children":[["slug","custom-booking-system-for-service-businesses","d",["category"]],{"children":["__PAGE__",{},"$undefined","$undefined",4608]},"$undefined","$undefined",4608]},"$undefined","$undefined",4608]},"$undefined","$undefined",4624],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1e60l9o4mkd24.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/2hjepq11b4wp9.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/25lbyser11m44.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"inter_2fe1ab3d-module__-T-KAq__variable","children":["$","body",null,{"className":"min-h-screen flex flex-col antialiased","children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Alpha Tec Solutions\",\"legalName\":\"Alpha Tec Designs\",\"url\":\"https://alphatecdesigns.co.ke/\",\"logo\":\"https://alphatecdesigns.co.ke//images/branding/logo.svg\",\"description\":\"Full-Stack Software Developer. I design and build business systems that solve real operational problems.\",\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Nairobi\",\"addressCountry\":\"KE\"},\"sameAs\":[\"https://www.linkedin.com/in/abraham-kariuki/\",\"https://github.com/Amchege\"],\"contactPoint\":{\"@type\":\"ContactPoint\",\"email\":\"info@alphatecdesigns.co.ke\",\"telephone\":\"+254723641660\",\"contactType\":\"customer service\",\"areaServed\":\"KE\"}}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"WebSite\",\"name\":\"Alpha Tec Solutions\",\"url\":\"https://alphatecdesigns.co.ke/\",\"description\":\"Full-Stack Software Development and Custom Business Systems\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"Alpha Tec Solutions\",\"url\":\"https://alphatecdesigns.co.ke/\"}}"}}],["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","div",null,{"className":"mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8","children":["$","div",null,{"className":"flex min-h-[60vh] flex-col items-center justify-center text-center","children":[["$","p",null,{"className":"text-sm font-semibold uppercase tracking-wider text-accent","children":"404"}],["$","h1",null,{"className":"mt-2 text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-balance","children":"Page not found"}],["$","p",null,{"className":"mt-4 max-w-md text-muted-foreground","children":"The page you are looking for does not exist or has been moved."}],["$","div",null,{"className":"mt-8","children":["$","span",null,{"className":"inline-flex items-center justify-center font-medium transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary-hover active:bg-primary-hover focus-visible:ring-primary/30 h-11 px-6 text-sm rounded-lg gap-2","role":"button","children":["$","$L5",null,{"href":"/","children":"Back to Home"}]}]}]]}]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"relative overflow-hidden","children":[["$","div",null,{"className":"relative h-px","children":[["$","div",null,{"className":"absolute inset-0 bg-gradient-to-r from-transparent via-blue-500/40 to-transparent"}],["$","div",null,{"className":"absolute inset-0 bg-gradient-to-r from-transparent via-orange-500/20 to-transparent blur-sm"}]]}],["$","div",null,{"className":"pointer-events-none absolute inset-0 opacity-[0.03]","style":{"backgroundImage":"radial-gradient(circle, #94a3b8 1px, transparent 1px)","backgroundSize":"24px 24px"}}],"$L6","$L7"]}]]}]}]]}],{"children":["$L8",{"children":["$L9",{"children":["$La",{},null,false,null]},null,false,"$b"]},null,false,"$b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le","$Lf"]],"S":true,"h":null,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"rajORUfnsfRy-eo_x8yor"}
+16:I[97367,["/_next/static/chunks/25lbyser11m44.js"],"OutletBoundary"]
+17:"$Sreact.suspense"
+19:I[97367,["/_next/static/chunks/25lbyser11m44.js"],"ViewportBoundary"]
+1b:I[97367,["/_next/static/chunks/25lbyser11m44.js"],"MetadataBoundary"]
+:HL["/images/logo-light-bg.png","image"]
+6:["$","div",null,{"className":"relative mx-auto max-w-7xl px-5 pt-16 pb-10 sm:px-6 lg:px-8","children":["$","div",null,{"className":"grid gap-12 sm:grid-cols-2 lg:grid-cols-12 lg:gap-8","children":[["$","div",null,{"className":"lg:col-span-4","children":[["$","$L5",null,{"href":"/","className":"group inline-flex items-center","children":["$","img",null,{"src":"/images/logo-light-bg.png","alt":"Alpha Tec Solutions","className":"h-10 w-auto object-contain"}]}],["$","p",null,{"className":"mt-5 max-w-xs text-sm leading-relaxed text-slate-400","children":"Transforming complex challenges into elegant, scalable software solutions. Engineering excellence from concept to deployment."}],["$","div",null,{"className":"mt-6 flex items-center gap-2","children":[["$","a","LinkedIn",{"href":"#","aria-label":"LinkedIn","className":"group relative flex h-9 w-9 items-center justify-center rounded-lg border border-slate-800 bg-slate-900/50 text-slate-500 transition-all duration-200 hover:border-slate-700 hover:bg-slate-800/60 hover:text-white","children":[["$","svg",null,{"className":"h-4 w-4 transition-transform duration-200 group-hover:scale-110","viewBox":"0 0 24 24","fill":"currentColor","children":["$","path",null,{"d":"M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"}]}],["$","span",null,{"className":"pointer-events-none absolute -top-px -left-px h-2 w-2 border-t border-l border-orange-500/0 transition-all duration-300 group-hover:border-orange-500/60"}],["$","span",null,{"className":"pointer-events-none absolute -bottom-px -right-px h-2 w-2 border-b border-r border-orange-500/0 transition-all duration-300 group-hover:border-orange-500/60"}]]}],["$","a","GitHub",{"href":"#","aria-label":"GitHub","className":"group relative flex h-9 w-9 items-center justify-center rounded-lg border border-slate-800 bg-slate-900/50 text-slate-500 transition-all duration-200 hover:border-slate-700 hover:bg-slate-800/60 hover:text-white","children":[["$","svg",null,{"className":"h-4 w-4 transition-transform duration-200 group-hover:scale-110","viewBox":"0 0 24 24","fill":"currentColor","children":["$","path",null,{"d":"M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"}]}],["$","span",null,{"className":"pointer-events-none absolute -top-px -left-px h-2 w-2 border-t border-l border-orange-500/0 transition-all duration-300 group-hover:border-orange-500/60"}],["$","span",null,{"className":"pointer-events-none absolute -bottom-px -right-px h-2 w-2 border-b border-r border-orange-500/0 transition-all duration-300 group-hover:border-orange-500/60"}]]}],"$L10"]}]]}],"$L11","$L12","$L13","$L14"]}]}]
+7:["$","div",null,{"className":"relative border-t border-slate-800/50","children":["$","div",null,{"className":"mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 py-6 sm:flex-row sm:px-6 lg:px-8","children":[["$","p",null,{"className":"text-xs text-slate-500","children":["© ",2026," Alpha Tec Solutions. All rights reserved."]}],["$","div",null,{"className":"flex items-center gap-6","children":[["$","$L5",null,{"href":"/privacy","className":"text-xs text-slate-500 transition-colors hover:text-slate-300","children":"Privacy Policy"}],["$","$L5",null,{"href":"/terms","className":"text-xs text-slate-500 transition-colors hover:text-slate-300","children":"Terms of Service"}],["$","span",null,{"className":"hidden sm:inline-flex items-center gap-1.5 text-[10px] font-medium tracking-wider text-slate-600 uppercase","children":[["$","span",null,{"className":"inline-block h-1.5 w-1.5 rounded-full bg-blue-500/60"}],"Built with precision"]}]]}]]}]}]
+8:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","main",null,{"className":"bg-slate-950 min-h-screen flex items-center justify-center relative","children":[["$","div",null,{"className":"absolute inset-0 pointer-events-none ","aria-hidden":"true","style":{"backgroundImage":"\n          linear-gradient(rgba(59, 130, 246, 0.015) 1px, transparent 1px),\n          linear-gradient(90deg, rgba(59, 130, 246, 0.015) 1px, transparent 1px)\n        ","backgroundSize":"48px 48px"}}],["$","div",null,{"className":"text-center px-6 relative z-10","children":[["$","span",null,{"className":"font-mono text-[11px] text-orange-500 uppercase tracking-[0.2em] block mb-6","children":"INSIGHTS / ERROR"}],["$","h1",null,{"className":"text-7xl md:text-8xl font-bold text-white mb-4","children":"404"}],["$","h2",null,{"className":"text-2xl font-semibold text-slate-300 mb-4","children":"Insight Not Found"}],["$","p",null,{"className":"text-slate-500 mb-10 max-w-md mx-auto leading-relaxed","children":"The insight you are looking for does not exist or is no longer published."}],["$","div",null,{"className":"flex flex-col sm:flex-row items-center justify-center gap-4","children":[["$","$L5",null,{"href":"/insights","className":"px-7 py-3 bg-orange-500 hover:bg-orange-600 text-white font-medium rounded transition-colors","children":"View All Insights"}],["$","$L5",null,{"href":"/","className":"px-7 py-3 border border-slate-700 text-slate-300 hover:border-blue-500/50 hover:text-white font-medium rounded transition-colors","children":"Go Home"}]]}]]}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$L15",[["$","script","script-0",{"src":"/_next/static/chunks/34knc997nwo1s.js","async":true,"nonce":"$undefined"}]],["$","$L16",null,{"children":["$","$17",null,{"name":"Next.MetadataOutlet","children":"$@18"}]}]]}]
+c:["$","$1","h",{"children":[null,["$","$L19",null,{"children":"$L1a"}],["$","div",null,{"hidden":true,"children":["$","$L1b",null,{"children":["$","$17",null,{"name":"Next.Metadata","children":"$L1c"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1e60l9o4mkd24.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+f:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/2hjepq11b4wp9.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+b:C
+10:["$","a","X (Twitter)",{"href":"#","aria-label":"X (Twitter)","className":"group relative flex h-9 w-9 items-center justify-center rounded-lg border border-slate-800 bg-slate-900/50 text-slate-500 transition-all duration-200 hover:border-slate-700 hover:bg-slate-800/60 hover:text-white","children":[["$","svg",null,{"className":"h-4 w-4 transition-transform duration-200 group-hover:scale-110","viewBox":"0 0 24 24","fill":"currentColor","children":["$","path",null,{"d":"M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"}]}],["$","span",null,{"className":"pointer-events-none absolute -top-px -left-px h-2 w-2 border-t border-l border-orange-500/0 transition-all duration-300 group-hover:border-orange-500/60"}],["$","span",null,{"className":"pointer-events-none absolute -bottom-px -right-px h-2 w-2 border-b border-r border-orange-500/0 transition-all duration-300 group-hover:border-orange-500/60"}]]}]
+11:["$","div",null,{"className":"lg:col-span-2","children":["$","div",null,{"children":[["$","h3",null,{"className":"mb-4 text-[10px] font-bold tracking-[0.25em] text-slate-500 uppercase","children":"SOLUTIONS"}],["$","ul",null,{"className":"flex flex-col gap-3","children":[["$","li","/solutions/custom-software",{"children":["$","$L5",null,{"href":"/solutions/custom-software","className":"group relative inline-flex items-center text-sm text-slate-400 transition-colors duration-200 hover:text-white","children":["Custom Software",["$","span",null,{"className":"absolute bottom-0 left-0 h-px w-0 bg-orange-500/60 transition-all duration-300 group-hover:w-full"}]]}]}],["$","li","/solutions/cloud",{"children":["$","$L5",null,{"href":"/solutions/cloud","className":"group relative inline-flex items-center text-sm text-slate-400 transition-colors duration-200 hover:text-white","children":["Cloud Infrastructure",["$","span",null,{"className":"absolute bottom-0 left-0 h-px w-0 bg-orange-500/60 transition-all duration-300 group-hover:w-full"}]]}]}],["$","li","/solutions/data-analytics",{"children":["$","$L5",null,{"href":"/solutions/data-analytics","className":"group relative inline-flex items-center text-sm text-slate-400 transition-colors duration-200 hover:text-white","children":["Data & Analytics",["$","span",null,{"className":"absolute bottom-0 left-0 h-px w-0 bg-orange-500/60 transition-all duration-300 group-hover:w-full"}]]}]}],["$","li","/solutions/ai-automation",{"children":["$","$L5",null,{"href":"/solutions/ai-automation","className":"group relative inline-flex items-center text-sm text-slate-400 transition-colors duration-200 hover:text-white","children":["AI & Automation",["$","span",null,{"className":"absolute bottom-0 left-0 h-px w-0 bg-orange-500/60 transition-all duration-300 group-hover:w-full"}]]}]}]]}]]}]}]
+12:["$","div",null,{"className":"lg:col-span-2","children":["$","div",null,{"children":[["$","h3",null,{"className":"mb-4 text-[10px] font-bold tracking-[0.25em] text-slate-500 uppercase","children":"RESOURCES"}],["$","ul",null,{"className":"flex flex-col gap-3","children":[["$","li","/insights",{"children":["$","$L5",null,{"href":"/insights","className":"group relative inline-flex items-center text-sm text-slate-400 transition-colors duration-200 hover:text-white","children":["Insights & Articles",["$","span",null,{"className":"absolute bottom-0 left-0 h-px w-0 bg-orange-500/60 transition-all duration-300 group-hover:w-full"}]]}]}],["$","li","/projects",{"children":["$","$L5",null,{"href":"/projects","className":"group relative inline-flex items-center text-sm text-slate-400 transition-colors duration-200 hover:text-white","children":["Case Studies",["$","span",null,{"className":"absolute bottom-0 left-0 h-px w-0 bg-orange-500/60 transition-all duration-300 group-hover:w-full"}]]}]}],["$","li","/process",{"children":["$","$L5",null,{"href":"/process","className":"group relative inline-flex items-center text-sm text-slate-400 transition-colors duration-200 hover:text-white","children":["Our Process",["$","span",null,{"className":"absolute bottom-0 left-0 h-px w-0 bg-orange-500/60 transition-all duration-300 group-hover:w-full"}]]}]}],["$","li","/docs",{"children":["$","$L5",null,{"href":"/docs","className":"group relative inline-flex items-center text-sm text-slate-400 transition-colors duration-200 hover:text-white","children":["Documentation",["$","span",null,{"className":"absolute bottom-0 left-0 h-px w-0 bg-orange-500/60 transition-all duration-300 group-hover:w-full"}]]}]}]]}]]}]}]
+13:["$","div",null,{"className":"lg:col-span-2","children":["$","div",null,{"children":[["$","h3",null,{"className":"mb-4 text-[10px] font-bold tracking-[0.25em] text-slate-500 uppercase","children":"COMPANY"}],["$","ul",null,{"className":"flex flex-col gap-3","children":[["$","li","/about",{"children":["$","$L5",null,{"href":"/about","className":"group relative inline-flex items-center text-sm text-slate-400 transition-colors duration-200 hover:text-white","children":["About Us",["$","span",null,{"className":"absolute bottom-0 left-0 h-px w-0 bg-orange-500/60 transition-all duration-300 group-hover:w-full"}]]}]}],["$","li","/team",{"children":["$","$L5",null,{"href":"/team","className":"group relative inline-flex items-center text-sm text-slate-400 transition-colors duration-200 hover:text-white","children":["Our Team",["$","span",null,{"className":"absolute bottom-0 left-0 h-px w-0 bg-orange-500/60 transition-all duration-300 group-hover:w-full"}]]}]}],["$","li","/careers",{"children":["$","$L5",null,{"href":"/careers","className":"group relative inline-flex items-center text-sm text-slate-400 transition-colors duration-200 hover:text-white","children":["Careers",["$","span",null,{"className":"absolute bottom-0 left-0 h-px w-0 bg-orange-500/60 transition-all duration-300 group-hover:w-full"}]]}]}],["$","li","/contact",{"children":["$","$L5",null,{"href":"/contact","className":"group relative inline-flex items-center text-sm text-slate-400 transition-colors duration-200 hover:text-white","children":["Contact",["$","span",null,{"className":"absolute bottom-0 left-0 h-px w-0 bg-orange-500/60 transition-all duration-300 group-hover:w-full"}]]}]}]]}]]}]}]
+14:["$","div",null,{"className":"lg:col-span-2","children":[["$","h3",null,{"className":"mb-4 text-[10px] font-bold tracking-[0.25em] text-slate-500 uppercase","children":"CONTACT"}],["$","ul",null,{"className":"flex flex-col gap-4","children":[["$","li",null,{"className":"flex items-start gap-2.5 text-sm text-slate-400","children":[["$","svg",null,{"className":"mt-0.5 h-4 w-4 shrink-0 text-slate-600","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","children":[["$","rect",null,{"x":"2","y":"4","width":"20","height":"16","rx":"2"}],["$","path",null,{"d":"M22 4l-10 8L2 4"}]]}],["$","a",null,{"href":"mailto:info@alphatecdesigns.co.ke","className":"transition-colors hover:text-white","children":"info@alphatecdesigns.co.ke"}]]}],["$","li",null,{"className":"flex items-start gap-2.5 text-sm text-slate-400","children":[["$","svg",null,{"className":"mt-0.5 h-4 w-4 shrink-0 text-slate-600","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","children":["$","path",null,{"d":"M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"}]}],["$","a",null,{"href":"tel:+254723641660","className":"transition-colors hover:text-white","children":"+254 723 641 660 / 738 641 660"}]]}],["$","li",null,{"className":"flex items-start gap-2.5 text-sm text-slate-400","children":[["$","svg",null,{"className":"mt-0.5 h-4 w-4 shrink-0 text-slate-600","viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"2","strokeLinecap":"round","strokeLinejoin":"round","children":[["$","path",null,{"d":"M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"}],["$","circle",null,{"cx":"12","cy":"10","r":"3"}]]}],["$","span",null,{"children":"Nairobi, Kenya"}]]}]]}]]}]
+1d:I[43849,["/_next/static/chunks/25lbyser11m44.js","/_next/static/chunks/34knc997nwo1s.js"],"ArticlePageClient"]
+1e:T143c,
+## The Generic Booking Problem
+
+Service businesses have unique scheduling needs that generic booking tools (Calendly, Acuity, Bookly) can't fully address:
+
+- **Multiple resource types** — Staff, rooms, equipment that must be scheduled together
+- **Variable service durations** — Not every appointment is 30 or 60 minutes
+- **Complex availability rules** — Different staff have different hours, skills, and preferences
+- **Industry-specific workflows** — Consultation → treatment → follow-up isn't a simple booking
+- **Integration requirements** — Booking must connect to CRM, inventory, payment, and reporting
+
+A 2025 Software Advice survey found that **58% of service businesses** using generic booking software report at least one critical feature gap.
+
+## What Generic Booking Tools Do Well
+
+- Simple one-to-one appointment scheduling
+- Calendar sync (Google, Outlook)
+- Basic email/SMS reminders
+- Payment collection for fixed-price services
+- Embeddable booking page
+
+## Where Generic Tools Fall Short
+
+### 1. Multi-Resource Scheduling
+
+A salon needs to book a stylist, a room, and specific equipment simultaneously. A clinic needs to book a doctor, a treatment room, and a nurse. Generic tools usually handle one resource — the person.
+
+### 2. Service Packages and Sequences
+
+A medical aesthetic clinic offers: Consultation (30 min) → Treatment A (60 min, Room 1) → Follow-up (15 min, any room). This sequence must be scheduled as a unit with dependencies. Generic tools treat each as a separate booking.
+
+### 3. Complex Business Rules
+
+```
+Examples of rules generic tools can't handle:
+
+- "Dr. Smith only does Procedure X on Tuesday and Thursday mornings"
+- "Room 3 can't be used after Procedure Y for 30 minutes (cleanup)"
+- "New clients must have a 15-min consultation before booking treatment"
+- "Package of 6 sessions must be completed within 90 days"
+- "VIP clients get priority booking 2 weeks ahead of standard"
+```
+
+### 4. Industry-Specific Data Capture
+
+A salon needs: hair type, previous treatments, allergies, color formula history.
+A tutor needs: student level, learning goals, curriculum progress.
+A contractor needs: property photos, scope of work, material requirements.
+
+Generic tools offer custom fields, but they're not structured, validated, or connected to the workflow.
+
+## What a Custom Booking System Provides
+
+### Intelligent Scheduling Engine
+
+- Multi-resource constraint solving
+- Variable duration services
+- Buffer times between appointments
+- Overlap prevention across resources
+- Waitlist management
+
+### Workflow Integration
+
+- Pre-booking assessment or questionnaire
+- Automated preparation notifications (staff + client)
+- Post-booking follow-up sequences
+- Resource preparation triggers
+
+### Business Intelligence
+
+- Revenue per time slot analysis
+- Staff utilization rates
+- Cancellation pattern analysis
+- Peak demand forecasting
+- Service popularity trends
+
+### Seamless Operations
+
+- Connected to inventory (products used per service)
+- Connected to payments (deposits, packages, subscriptions)
+- Connected to reporting (daily, weekly, monthly operational reports)
+- Connected to CRM (client history, preferences, lifetime value)
+
+## Cost Comparison: Custom vs. Generic
+
+For a salon with 8 staff and 200+ weekly appointments:
+
+| Factor | Generic (Bookly/Acuity) | Custom System |
+|--------|------------------------|---------------|
+| Monthly subscription | $150–$300/month | $0 |
+| Per-booking fees | $0.50–$1.00/booking | $0 |
+| Annual cost | $3,000–$6,000 | $0 |
+| Workaround labor (est.) | 8 hrs/week | 0 |
+| Workaround labor value | $22,880/year | $0 |
+| Development cost | $0 | $35,000–$60,000 |
+| **Year 1 total** | **$25,880–$28,880** | **$35,000–$60,000** |
+| **Year 2–3 total** | **$6,000–$12,000** | **$3,000–$6,000** (maintenance) |
+| **3-Year total** | **$37,880–$52,880** | **$41,000–$72,000** |
+
+The break-even point is typically **18–24 months**. After that, custom is cheaper every year — and provides capabilities the generic tool never will.
+
+## Industries That Benefit Most from Custom Booking
+
+| Industry | Key Custom Need |
+|----------|----------------|
+| Salons & spas | Multi-resource, packages, product inventory |
+| Medical clinics | Patient history, procedure sequences, compliance |
+| Education & tutoring | Curriculum scheduling, progress tracking |
+| Home services | Route optimization, scope capture, dispatch |
+| Fitness studios | Class capacity, instructor scheduling, membership |
+| Automotive | Bay scheduling, parts inventory, service history |
+
+> **TIP**: If your booking process requires more than 3 steps, involves more than one resource type, or needs data that flows into other systems, a custom booking system will pay for itself within 2 years.
+
+## Key Takeaways
+
+- 58% of service businesses report feature gaps in generic booking tools
+- Multi-resource scheduling is the #1 limitation of off-the-shelf tools
+- Custom booking breaks even in 18–24 months for busy service businesses
+- Industry-specific workflows and data capture are impossible to customize in generic tools
+- The more complex your scheduling, the faster custom pays for itself
+1f:T114e,
+## Direct Answer
+
+A **website** presents information — users read, navigate, and consume content. A **web application** provides functionality — users log in, interact with data, and perform tasks. The key difference is **interactivity and state management**: websites are mostly static pages; web applications manage user sessions, data, and complex logic.
+
+Think of it this way: your company's homepage is a website. Your project management tool that runs in the browser is a web application.
+
+## Side-by-Side Comparison
+
+| Characteristic | Website | Web Application |
+|---------------|---------|-----------------|
+| Primary purpose | Information display | Task execution |
+| User interaction | Browse, read, click | Create, edit, delete, manage |
+| User accounts | Usually not required | Almost always required |
+| Data management | Static content, CMS-driven | Dynamic data, database-backed |
+| State | Stateless (each page is independent) | Stateful (sessions, user data) |
+| Complexity | Low to medium | Medium to high |
+| Development time | 2–8 weeks | 6 weeks–6+ months |
+| Examples | Blog, portfolio, landing page | CRM, dashboard, booking system |
+
+## Where the Line Blurs
+
+Some modern sites have elements of both:
+
+- **E-commerce sites** — Product pages are website-like; checkout and account management are app-like
+- **SaaS marketing sites** — The homepage is a website; the product itself is a web app
+- **Content platforms** — Reading is website-like; commenting and managing subscriptions is app-like
+
+This is why the distinction matters for **planning and budgeting** — building a website and building a web application are fundamentally different projects.
+
+## Why the Confusion Matters
+
+Businesses often request a "website" when they actually need a "web application," or vice versa. This causes:
+
+1. **Wrong budget expectations** — A web app costs 5–10x more than a website
+2. **Wrong timeline expectations** — A web app takes 3–10x longer
+3. **Wrong team expectations** — Websites need designers and content writers; web apps need software engineers
+4. **Wrong technology choices** — Static site generators for websites vs. full-stack frameworks for web apps
+
+## When You Need a Website
+
+- You need to establish an online presence
+- You want to publish content (blog, case studies, documentation)
+- You need a landing page for marketing campaigns
+- Your primary goal is information delivery
+- Users don't need to log in or manage data
+
+## When You Need a Web Application
+
+- Your users need to perform tasks in the browser
+- You need user accounts and role-based access
+- You're managing dynamic data (not just content)
+- You need workflow automation
+- You're replacing or extending desktop software with a browser-based tool
+- You need real-time data updates
+
+## Technology Differences
+
+| Component | Website | Web Application |
+|-----------|---------|-----------------|
+| Rendering | Static/SSR | Client-side + SSR |
+| Framework | Next.js (static), Astro | Next.js (full), React |
+| Database | CMS (Contentful, Sanity) | PostgreSQL, MySQL |
+| Authentication | None or basic | Full auth system |
+| State management | Not needed | Redux, Zustand, React Query |
+| Hosting | CDN-optimized | App server + database |
+| Testing | Accessibility, links | Unit, integration, E2E |
+
+## What Most Businesses Actually Need
+
+Most businesses need **both** — a website for their public presence and one or more web applications for their operations. The confusion happens when they try to get both from one project with one budget.
+
+**Recommended approach**:
+1. Build the **website first** if you don't have one (2–6 weeks)
+2. Identify which **web application** delivers the most operational value (prioritize)
+3. Build the web application as a **separate project** with appropriate budget and timeline
+
+> **TIP**: If you're not sure whether you need a website or a web app, ask yourself: "Will users need to log in?" If yes, it's at least partially a web application. If no, it's a website. If sometimes, you probably need both.
+
+## Key Takeaways
+
+- Websites present information; web applications provide functionality
+- The distinction affects budget (5–10x difference), timeline, and team
+- Most businesses need both — plan them as separate projects
+- "Will users log in?" is the simplest test to distinguish them
+- Confusing the two is the #1 cause of budget and timeline mismatches
+20:T1292,
+## Direct Answer
+
+A **Progressive Web Application (PWA)** is a web application that uses modern browser capabilities to deliver an app-like experience — offline support, push notifications, home screen installation, and fast loading — without requiring users to download anything from an app store.
+
+PWAs can deliver **90% of native app functionality at 30% of the cost**. They're ideal for businesses that need mobile presence without the overhead of native app development.
+
+## What Makes a Web App "Progressive"?
+
+A PWA must meet these criteria:
+
+1. **Secure** — Served over HTTPS
+2. **Installable** — Can be added to the home screen
+3. **Offline-capable** — Works without internet (for core functions)
+4. **Fast** — Loads quickly even on slow networks
+5. **Responsive** — Works on any screen size
+6. **App-like** — Feels like a native application, not a website
+
+## PWA vs. Native App vs. Regular Web App
+
+| Factor | PWA | Native App | Regular Web App |
+|--------|-----|-----------|-----------------|
+| Installation | From browser | App store | None |
+| Offline support | Yes (service workers) | Yes | No |
+| Push notifications | Yes | Yes | Limited |
+| App store visibility | No | Yes | No |
+| Development cost | $15K–$50K | $50K–$200K+ | $10K–$40K |
+| Maintenance | Single codebase | iOS + Android separately | Single codebase |
+| Update delivery | Instant (no approval) | App store review (1–7 days) | Instant |
+| Performance | Near-native | Best | Good |
+| Hardware access | Camera, GPS, etc. | Full access | Limited |
+
+## When PWAs Are the Best Choice
+
+### E-Commerce and Retail
+
+PWAs load fast on slow connections and support offline browsing. **Target** saw a 36% increase in conversions after launching their PWA. **Starbucks** PWA is 99.84% smaller than their native app.
+
+### Service Businesses
+
+Booking systems, appointment scheduling, and service management work perfectly as PWAs — users can access them from any device without downloading anything.
+
+### Field Operations
+
+Offline capability is critical for field workers. A property inspection PWA can collect data offline and sync when connectivity returns.
+
+### Internal Business Tools
+
+Dashboards, approval workflows, and management systems that need to work on both desktop and mobile without maintaining separate codebases.
+
+## When You Still Need a Native App
+
+- **Heavy use of device hardware** — AR, advanced camera features, Bluetooth peripherals
+- **App store discovery matters** — Your primary acquisition channel is people searching the app store
+- **Complex offline functionality** — Offline data editing, conflict resolution, large local databases
+- **Platform-specific UI expectations** — iOS and Android users expect different interaction patterns
+- **Background processing** — Continuous location tracking, background uploads
+
+## Real-World PWA Results
+
+| Company | PWA Result | Industry |
+|---------|-----------|----------|
+| Pinterest | 60% increase in engagement | Social/Discovery |
+| Twitter Lite | 65% increase in pages per session | Social |
+| Starbucks | 2x daily active users | Food & Beverage |
+| Alibaba | 76% higher conversions | E-Commerce |
+| Lancôme | 17% increase in conversions | Beauty/Retail |
+
+## Building a PWA: What's Different
+
+A PWA is essentially a well-built web app with two additional components:
+
+```
+1. Service Worker (sw.js)
+   → Caches assets for offline use
+   → Intercepts network requests
+   → Syncs data when online
+
+2. Web App Manifest (manifest.json)
+   → App name, icons, theme color
+   → Display mode (standalone, fullscreen)
+   → Installability configuration
+```
+
+If you're already building with Next.js, adding PWA capabilities adds roughly **10–15% to development time**.
+
+## Cost Comparison: PWA vs. Native
+
+For a business app with 15 screens and core features:
+
+| Approach | Development | Annual Maintenance | 3-Year Total |
+|----------|------------|-------------------|-------------|
+| PWA (single codebase) | $35,000 | $5,000 | $50,000 |
+| Native iOS only | $80,000 | $12,000 | $116,000 |
+| Native iOS + Android | $140,000 | $24,000 | $212,000 |
+| PWA + Native (hybrid) | $100,000 | $18,000 | $154,000 |
+
+> **TIP**: A common strategy is to launch a PWA first to validate the mobile use case, then invest in a native app only if the data shows strong mobile demand. This de-risks a $140K+ native investment.
+
+## Key Takeaways
+
+- PWAs deliver 90% of native functionality at 30% of the cost
+- Best for e-commerce, service businesses, field operations, and internal tools
+- Adding PWA to a Next.js app adds only 10–15% development time
+- Launch PWA first, build native later only if data justifies it
+- Not suitable for heavy hardware use or app-store-dependent discovery
+22:I[27201,["/_next/static/chunks/25lbyser11m44.js"],"IconMark"]
+21:T140b,
+## Direct Answer
+
+For most custom business web applications in 2025, **Next.js is the strongest choice** because it combines excellent developer experience, strong SEO capabilities, built-in performance optimization, and the largest React ecosystem. It's used by companies ranging from startups to enterprises and is backed by Vercel with long-term maintenance commitment.
+
+Next.js powers over **19% of all websites** using JavaScript frameworks (W3Techs, 2025), making it the most widely adopted React framework.
+
+## What Makes Next.js Stand Out
+
+### 1. Hybrid Rendering
+
+Next.js supports multiple rendering strategies in a single application:
+
+```
+Server-Side Rendering (SSR)    → Dynamic pages, always fresh
+Static Site Generation (SSG)  → Pre-built pages, fastest load
+Incremental Static Regen (ISR) → Static + periodic updates
+Client-Side Rendering (CSR)   → Interactive, app-like pages
+```
+
+This means you can have a marketing homepage that's statically generated for speed, a dashboard that's client-rendered for interactivity, and a product page that's server-rendered for SEO — all in one application.
+
+### 2. Built-in Performance
+
+- **Automatic code splitting** — Only load JavaScript for the current page
+- **Image optimization** — Automatic resizing, format conversion, lazy loading
+- **Font optimization** — Self-hosted fonts with no layout shift
+- **Script optimization** — Lazy loading third-party scripts
+
+### 3. SEO Advantages
+
+Unlike pure client-side React apps (Create React App, Vite-only), Next.js renders HTML on the server, making content visible to search engines immediately. This is critical for business applications that need to attract organic traffic.
+
+### 4. API Routes Built In
+
+Next.js includes a full API layer, allowing you to build backend endpoints alongside your frontend in a single project. For many business applications, this eliminates the need for a separate backend service.
+
+```
+// Example: Next.js API route
+// app/api/properties/route.ts
+
+import { NextResponse } from 'next/server';
+import { db } from '@/lib/database';
+
+export async function GET(request: Request) {
+  const { searchParams } = new URL(request.url);
+  const status = searchParams.get('status');
+  
+  const properties = await db.property.findMany({
+    where: status ? { status } : undefined,
+    orderBy: { createdAt: 'desc' },
+  });
+
+  return NextResponse.json(properties);
+}
+```
+
+### 5. Developer Ecosystem
+
+- **Largest hiring pool** among React frameworks
+- **Most third-party integrations** and examples
+- **Strong community** — solutions to almost any problem already exist
+- **Vercel backing** — well-funded, long-term maintenance commitment
+
+## When Next.js Is the Right Choice
+
+- Building a business web application with both public and authenticated pages
+- SEO matters for any part of your application
+- You want a single codebase for frontend and API
+- Performance and user experience are priorities
+- You want access to the largest React talent pool
+
+## When Next.js Is NOT the Right Choice
+
+- **Purely internal tools** where SEO doesn't matter — a simpler React + Vite setup may be faster to build
+- **Real-time applications** (chat, collaboration) where WebSocket handling is primary — consider specialized frameworks
+- **Mobile-first applications** where a native or React Native approach is better
+- **Heavy data processing** where a separate backend service is needed anyway
+
+## Next.js vs. Alternatives for Business Apps
+
+| Factor | Next.js | Remix | Nuxt (Vue) | Laravel (PHP) |
+|--------|---------|-------|------------|---------------|
+| React ecosystem | Best | Good | N/A | N/A |
+| SEO capability | Excellent | Excellent | Excellent | Good |
+| API built-in | Yes | Yes | Yes | Yes (core feature) |
+| Developer pool | Largest | Growing | Medium | Large |
+| Learning curve | Medium | Medium | Medium | Low |
+| Best for | Most business apps | Data-heavy apps | Vue-preferring teams | PHP-preferring teams |
+
+## Cost Impact of Choosing Next.js
+
+Because Next.js has the largest developer ecosystem:
+
+- **Faster hiring** — More developers available, less time to recruit
+- **More solutions exist** — Fewer custom builds, more library usage
+- **Lower maintenance cost** — More documentation, community support
+- **Easier team scaling** — New developers onboard faster
+
+These factors can reduce total development cost by **15–25%** compared to less popular frameworks, even if the hourly rate is similar.
+
+> **IMPORTANT**: Don't choose Next.js because it's popular. Choose it because it solves your specific problems (SEO + performance + API in one framework) and because your team has experience with it. A less popular framework that your team knows well will always outperform a trending framework they're learning.
+
+## Key Takeaways
+
+- Next.js combines SSR, SSG, CSR, and API routes in one framework
+- It's the most widely adopted React framework with the largest talent pool
+- Built-in performance and SEO optimizations save development time
+- Not ideal for purely internal tools where SEO doesn't matter
+- Team expertise matters more than framework popularity
+15:[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Custom Booking Systems for Service Businesses: Why Off-the-Shelf Falls Short\",\"description\":\"Why service businesses — salons, clinics, tutors, contractors — increasingly build custom booking systems instead of using generic scheduling tools.\",\"image\":\"https://images.pexels.com/photos/6925808/pexels-photo-6925808.jpeg?auto=compress&cs=tinysrgb&w=1200\",\"author\":{\"@type\":\"Organization\",\"name\":\"Alpha Tec Solutions\",\"url\":\"https://alphatecsolutions.com\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"Alpha Tec Solutions\",\"logo\":{\"@type\":\"ImageObject\",\"url\":\"https://alphatecsolutions.com/images/logo.png\"}},\"datePublished\":\"2026-08-06\",\"dateModified\":\"2026-08-06\",\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://alphatecsolutions.com/insights/custom-booking-system-for-service-businesses\"}}"}}],null,["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://alphatecsolutions.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Insights\",\"item\":\"https://alphatecsolutions.com/insights\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Web Applications\",\"item\":\"https://alphatecsolutions.com/insights/category/web-applications\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Custom Booking Systems for Service Businesses: Why Off-the-Shelf Falls Short\",\"item\":\"https://alphatecsolutions.com/insights/custom-booking-system-for-service-businesses\"}]}"}}],["$","$L1d",null,{"article":{"id":"ins-021","slug":"custom-booking-system-for-service-businesses","title":"Custom Booking Systems for Service Businesses: Why Off-the-Shelf Falls Short","excerpt":"Why service businesses — salons, clinics, tutors, contractors — increasingly build custom booking systems instead of using generic scheduling tools.","content":"$1e","category":"web-applications","topics":["custom-software","salon-software","workflow-management"],"author":{"name":"Alpha Tec Solutions","role":"Full-Stack Software Development Team","bio":"We build custom business software, management systems, and web applications that solve real operational problems.","image":"/images/team/alpha-tec-default.jpg","linkedin":"https://linkedin.com/company/alpha-tec-solutions","github":"https://github.com/alpha-tec-solutions","website":"https://alphatecsolutions.com"},"publishedAt":"2026-08-06","readingTime":8,"featured":false,"coverImage":{"src":"https://images.pexels.com/photos/6925808/pexels-photo-6925808.jpeg?auto=compress&cs=tinysrgb&w=1200","alt":"Scheduling interface of a custom booking system showing multi-resource constraint solving","width":1200,"height":630},"seo":{"title":"Custom Booking Systems for Service Businesses: Why Generic Falls Short","description":"Why salons, clinics, and service businesses build custom booking systems. Multi-resource scheduling, complex rules, and cost comparison with generic tools."},"relatedSolutions":["custom-web-applications","business-automation"],"relatedProjects":[],"relatedInsights":["custom-web-application-vs-website","benefits-of-progressive-web-applications"],"status":"published","order":21,"contentBrief":{"searchIntent":"commercial","contentGoal":"SUPPORT_SOLUTION","primaryKeyword":"custom booking system","secondaryKeywords":["booking software for service business","custom scheduling software","salon booking system"],"targetAudience":"Service business owners frustrated with generic booking tools"}},"relatedInsights":[{"id":"ins-018","slug":"custom-web-application-vs-website","title":"Custom Web Application vs Website: What's the Difference?","excerpt":"Understanding the fundamental difference between a website and a web application — and why businesses often need both but confuse the two.","content":"$1f","category":"web-applications","topics":["react","nextjs","custom-software"],"author":"$15:3:props:article:author","publishedAt":"2026-06-09","readingTime":6,"featured":false,"coverImage":{"src":"https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=1200","alt":"Comparison diagram showing the differences between a website and a web application architecture","width":1200,"height":630},"seo":{"title":"Custom Web Application vs Website: What's the Difference?","description":"Understand the fundamental difference between websites and web applications. How to know which you need, with cost, timeline, and technology comparisons."},"relatedSolutions":["custom-web-applications","business-software"],"relatedProjects":[],"relatedInsights":["benefits-of-progressive-web-applications","why-nextjs-for-business-web-applications"],"status":"published","order":18,"contentBrief":{"searchIntent":"informational","contentGoal":"EDUCATE","primaryKeyword":"web application vs website","secondaryKeywords":["difference between website and web app","what is a web application","custom web application"],"targetAudience":"Business owners unclear on whether they need a website or web application"}},{"id":"ins-020","slug":"benefits-of-progressive-web-applications","title":"Progressive Web Applications (PWA): Are They Right for Your Business?","excerpt":"What PWAs are, how they compare to native apps and regular web apps, and which businesses benefit most from the PWA approach.","content":"$20","category":"web-applications","topics":["react","nextjs","custom-software"],"author":"$15:3:props:article:author","publishedAt":"2025-04-15","readingTime":7,"featured":false,"coverImage":{"src":"https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=1200","alt":"Comparison of PWA, native app, and regular web app architectures with cost data","width":1200,"height":630},"seo":{"title":"Progressive Web Applications (PWA): Right for Your Business?","description":"What PWAs are, how they compare to native apps, cost comparisons, and real-world results from Pinterest, Starbucks, and Alibaba."},"relatedSolutions":["custom-web-applications","business-software"],"relatedProjects":[],"relatedInsights":["custom-web-application-vs-website","why-nextjs-for-business-web-applications"],"status":"published","order":20,"contentBrief":{"searchIntent":"commercial","contentGoal":"EDUCATE","primaryKeyword":"progressive web application","secondaryKeywords":["PWA benefits","PWA vs native app","should I build a PWA"],"targetAudience":"Business owners deciding between PWA and native app development"}},{"id":"ins-019","slug":"why-nextjs-for-business-web-applications","title":"Why Next.js Is the Best Choice for Business Web Applications in 2025","excerpt":"A technical and business case for choosing Next.js as the framework for custom business web applications — and when it's not the right choice.","content":"$21","category":"web-applications","topics":["nextjs","react","software-architecture"],"author":"$15:3:props:article:author","publishedAt":"2026-07-25","readingTime":7,"featured":false,"coverImage":{"src":"https://images.pexels.com/photos/34803968/pexels-photo-34803968.jpeg?auto=compress&cs=tinysrgb&w=1200","alt":"Architecture diagram showing Next.js hybrid rendering strategies for business web applications","width":1200,"height":630},"seo":{"title":"Why Next.js Is the Best Choice for Business Web Applications in 2025","description":"Technical and business case for Next.js for custom business web apps. Covers rendering strategies, SEO, API routes, and when to choose alternatives."},"relatedSolutions":["custom-web-applications","business-software"],"relatedProjects":[],"relatedInsights":["custom-web-application-vs-website","how-to-choose-tech-stack-for-business-software"],"status":"published","order":19,"contentBrief":{"searchIntent":"commercial","contentGoal":"EDUCATE","primaryKeyword":"Next.js for business applications","secondaryKeywords":["why use Next.js","Next.js business","best framework for web application"],"targetAudience":"Technical decision makers choosing a framework for business web apps"}}],"category":{"slug":"web-applications","name":"Web Applications","description":"Custom web applications that solve specific business problems and improve user experience.","order":5},"breadcrumbs":[{"name":"Home","url":"https://alphatecsolutions.com"},{"name":"Insights","url":"https://alphatecsolutions.com/insights"},{"name":"Web Applications","url":"https://alphatecsolutions.com/insights/category/web-applications"},{"name":"Custom Booking Systems for Service Businesses: Why Off-the-Shelf Falls Short","url":"https://alphatecsolutions.com/insights/custom-booking-system-for-service-businesses"}]}]]
+1a:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+18:null
+1c:[["$","title","0",{"children":"Custom Booking Systems for Service Businesses: Why Generic Falls Short | Alpha Tec Solutions"}],["$","meta","1",{"name":"description","content":"Why salons, clinics, and service businesses build custom booking systems. Multi-resource scheduling, complex rules, and cost comparison with generic tools."}],["$","meta","2",{"name":"robots","content":"index, follow"}],["$","meta","3",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","link","4",{"rel":"canonical","href":"https://alphatecsolutions.com/insights/custom-booking-system-for-service-businesses"}],["$","meta","5",{"property":"og:title","content":"Alpha Tec Solutions | Full-Stack Software Developer"}],["$","meta","6",{"property":"og:description","content":"Full-Stack Software Developer. I design and build business systems that solve real operational problems."}],["$","meta","7",{"property":"og:url","content":"https://alphatecdesigns.co.ke/"}],["$","meta","8",{"property":"og:site_name","content":"Alpha Tec Solutions"}],["$","meta","9",{"property":"og:locale","content":"en_US"}],["$","meta","10",{"property":"og:type","content":"website"}],["$","meta","11",{"name":"twitter:card","content":"summary"}],["$","meta","12",{"name":"twitter:title","content":"Alpha Tec Solutions | Full-Stack Software Developer"}],["$","meta","13",{"name":"twitter:description","content":"Full-Stack Software Developer. I design and build business systems that solve real operational problems."}],["$","link","14",{"rel":"icon","href":"/icon.png?icon.3l96nj48zx7i-.png","sizes":"408x612","type":"image/png"}],["$","$L22","15",{}]]
