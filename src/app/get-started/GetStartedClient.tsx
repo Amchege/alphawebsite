@@ -45,6 +45,8 @@ export function GetStartedClient() {
     description: '',
   });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -54,9 +56,29 @@ export function GetStartedClient() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError('');
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        const data = await res.json();
+        setError(data.error || 'Something went wrong. Please try again.');
+      }
+    } catch (err) {
+      setError('Network error. Please check your connection.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -235,10 +257,14 @@ export function GetStartedClient() {
                 <div className="pt-4">
                   <button
                     type="submit"
-                    className="px-10 py-4 bg-orange-500 hover:bg-orange-600 text-white font-medium text-[15px] rounded transition-colors duration-200"
+                    disabled={loading}
+                    className="px-10 py-4 bg-orange-500 hover:bg-orange-600 disabled:bg-orange-500/50 disabled:cursor-not-allowed text-white font-medium text-[15px] rounded transition-colors duration-200"
                   >
-                    Submit Project
+                    {loading ? 'Sending...' : 'Submit Project'}
                   </button>
+                    {error && (
+                    <p className="text-red-500 text-sm pt-2">{error}</p>
+                  )}
                 </div>
                 <p className="text-slate-600 text-sm pt-2">
                   We&apos;ll respond within 24 hours. No spam, ever.
