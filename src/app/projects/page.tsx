@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState, useMemo } from "react";
 import { Container } from "@/components/ui/container";
@@ -12,7 +12,6 @@ import { GradientField } from "@/components/visual/gradient-field";
 import { SoftwareSystemVisual } from "@/components/visual/software-system-visual";
 import { VideoBackground } from "@/components/ui/video-background";
 import { projects } from "@/data/projects";
-import { HeroSentinel } from "@/components/layout/HeroSentinel";
 
 // Tech visual configuration for the Hero
 const heroNodes = [

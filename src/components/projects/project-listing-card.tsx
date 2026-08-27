@@ -16,8 +16,7 @@ export function ProjectListingCard({ project, className }: ProjectListingCardPro
   const number = String(project.order).padStart(2, "0");
 
   return (
-    <Link
-      href={`/projects/${project.slug}`}
+    <div
       className={cn(
         "group relative block rounded-xl border border-border bg-card overflow-hidden",
         "transition-all duration-500 ease-out",
@@ -35,7 +34,7 @@ export function ProjectListingCard({ project, className }: ProjectListingCardPro
         aria-hidden="true"
       />
 
-      <div className="relative p-6 sm:p-7 z-0">
+      <Link href={`/projects/${project.slug}/`} className="relative p-6 sm:p-7 z-0 block">
         {/* Header */}
         <div className="flex items-center justify-between border-b border-border/50 pb-4 mb-4">
           <MonospaceLabel className="text-primary/70">SYSTEM / {number}</MonospaceLabel>
@@ -56,7 +55,7 @@ export function ProjectListingCard({ project, className }: ProjectListingCardPro
         <div className="mt-5 rounded-lg border border-border/50 bg-muted/30 p-4 transition-all duration-500 group-hover:border-primary/20 group-hover:bg-muted/50 relative overflow-hidden">
           {/* Subtle inner glow on hover */}
           <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-gradient-to-br from-primary/5 via-transparent to-transparent" aria-hidden="true" />
-          
+
           <div className="relative z-10 mb-3 flex items-center justify-between border-b border-border/30 pb-2">
             <span className="text-[10px] font-mono font-medium uppercase tracking-widest text-muted-foreground/40">System Architecture</span>
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" className="text-muted-foreground/20" aria-hidden="true">
@@ -82,11 +81,11 @@ export function ProjectListingCard({ project, className }: ProjectListingCardPro
             <path d="M1 7h12m0 0L8 2m5 5L8 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </div>
-      </div>
+      </Link>
 
       {/* Blueprint corner accents */}
       <div className="pointer-events-none absolute top-0 left-0 h-8 w-8 border-l-2 border-t-2 border-primary/0 transition-all duration-500 group-hover:border-primary/50 z-20" aria-hidden="true" />
       <div className="pointer-events-none absolute bottom-0 right-0 h-8 w-8 border-r-2 border-b-2 border-primary/0 transition-all duration-500 group-hover:border-primary/50 z-20" aria-hidden="true" />
-    </Link>
+    </div>
   );
 }

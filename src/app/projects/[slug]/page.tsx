@@ -1,17 +1,15 @@
-﻿import { notFound } from "next/navigation";
+import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { MonospaceLabel } from "@/components/ui/monospace-label";
 import { LinkButton } from "@/components/ui/link-button";
-import { Badge } from "@/components/ui/badge";
 import { JsonLd } from "@/components/seo/json-ld";
 import { generatePageMetadata } from "@/lib/metadata";
 import { generateBreadcrumbSchema, generateWebPageSchema } from "@/lib/structured-data";
 import { getProjectBySlug, getRelatedProjects } from "@/data/projects";
 import { ProjectDetailVisual } from "@/components/projects/project-detail-visual";
-import { ProjectScreenshotPlaceholder } from "@/components/projects/project-screenshot-placeholder";
 import { ProjectTechStack } from "@/components/projects/project-tech-stack";
 import { ProjectFeaturesSection } from "@/components/projects/project-features-section";
 import { ProjectWorkflowSection } from "@/components/projects/project-workflow-section";
@@ -19,7 +17,6 @@ import { ProjectArchitectureSection } from "@/components/projects/project-archit
 import { RelatedProjects } from "@/components/projects/related-projects";
 import { ScrollReveal } from "@/components/animations/scroll-reveal";
 import { Check } from "lucide-react";
-import { HeroSentinel } from "@/components/layout/HeroSentinel";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -33,7 +30,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return generatePageMetadata({
     title: `${project.title} | Alpha Tec Solutions`,
     description: project.seo.description,
-    path: `/projects/${project.slug}`,
+    path: `/projects/${project.slug}/`,
   });
 }
 
@@ -61,43 +58,65 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       <JsonLd
         data={generateBreadcrumbSchema([
           { name: "Home", path: "/" },
-          { name: "Projects", path: "/projects" },
-          { name: project.title, path: `/projects/${project.slug}` },
+          { name: "Projects", path: "/projects/" },
+          { name: project.title, path: `/projects/${project.slug}/` },
         ])}
       />
       <JsonLd
         data={generateWebPageSchema({
           title: project.title,
           description: project.seo.description,
-          path: `/projects/${project.slug}`,
+          path: `/projects/${project.slug}/`,
         })}
       />
 
-      {/* ===== HERO ===== */}
-      <Section className="pt-32 pb-0 md:pt-36">
-        <Container>
+      {/* ===== CINEMATIC DARK HERO ===== */}
+      <Section className="relative overflow-hidden pt-32 pb-16 md:pt-36 md:pb-20 min-h-[520px] md:min-h-[600px] flex items-center">
+        {/* Base dark fill */}
+        <div className="absolute inset-0 bg-blue-950" />
+
+        {/* Hero image layer */}
+        {project.heroImage && (
+          <div className="absolute inset-0">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={project.heroImage.src}
+              alt={project.heroImage.alt}
+              className="h-full w-full object-cover opacity-25"
+            />
+          </div>
+        )}
+
+        {/* Gradient overlays for depth */}
+        <div className="absolute inset-0 bg-gradient-to-t from-blue-950 via-blue-950/70 to-blue-950/50" />
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-950/80 via-transparent to-blue-950/60" />
+
+        {/* Subtle blue accent glow */}
+        <div className="absolute bottom-0 left-1/4 h-96 w-96 rounded-full bg-primary/10 blur-3xl" aria-hidden="true" />
+
+        <Container className="relative z-10">
           <Breadcrumb
             items={[
               { label: "Home", href: "/" },
-              { label: "Projects", href: "/projects" },
+              { label: "Projects", href: "/projects/" },
               { label: project.title },
             ]}
-            className="mb-8"
+            className="mb-8 [&_a]:text-white/60 [&_a:hover]:text-white [&>*:last-child]:text-white/40"
           />
 
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-14">
-            {/* Text */}
+            {/* Text column */}
             <div>
               <ScrollReveal>
-                <MonospaceLabel>Case Study</MonospaceLabel>
+                <MonospaceLabel className="text-primary/90">Case Study</MonospaceLabel>
               </ScrollReveal>
               <ScrollReveal delay={0.05}>
-                <h1 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-[2.75rem] text-balance">
+                <h1 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-[2.75rem] text-balance leading-[1.1] drop-shadow-sm">
                   {project.title}
                 </h1>
               </ScrollReveal>
               <ScrollReveal delay={0.1}>
-                <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
+                <p className="mt-4 text-lg text-white/70 leading-relaxed">
                   {project.shortDescription}
                 </p>
               </ScrollReveal>
@@ -106,37 +125,37 @@ export default async function ProjectDetailPage({ params }: PageProps) {
               <ScrollReveal delay={0.15}>
                 <div className="mt-8 grid grid-cols-2 gap-x-6 gap-y-4">
                   <div>
-                    <MonospaceLabel>Industry</MonospaceLabel>
-                    <p className="mt-1 text-sm font-medium text-foreground">
+                    <MonospaceLabel className="text-white/50">Industry</MonospaceLabel>
+                    <p className="mt-1 text-sm font-medium text-white/90">
                       {project.industry}
                     </p>
                   </div>
                   <div>
-                    <MonospaceLabel>Type</MonospaceLabel>
-                    <p className="mt-1 text-sm font-medium text-foreground">
+                    <MonospaceLabel className="text-white/50">Type</MonospaceLabel>
+                    <p className="mt-1 text-sm font-medium text-white/90">
                       {project.projectType}
                     </p>
                   </div>
                   {project.frontendTechnologies.length > 0 && (
                     <div>
-                      <MonospaceLabel>Frontend</MonospaceLabel>
-                      <p className="mt-1 text-sm font-medium text-foreground">
+                      <MonospaceLabel className="text-white/50">Frontend</MonospaceLabel>
+                      <p className="mt-1 text-sm font-medium text-white/90">
                         {project.frontendTechnologies.join(", ")}
                       </p>
                     </div>
                   )}
                   {project.backendTechnologies.length > 0 && (
                     <div>
-                      <MonospaceLabel>Backend</MonospaceLabel>
-                      <p className="mt-1 text-sm font-medium text-foreground">
+                      <MonospaceLabel className="text-white/50">Backend</MonospaceLabel>
+                      <p className="mt-1 text-sm font-medium text-white/90">
                         {project.backendTechnologies.join(", ")}
                       </p>
                     </div>
                   )}
                   {project.databaseTechnologies.length > 0 && (
                     <div>
-                      <MonospaceLabel>Database</MonospaceLabel>
-                      <p className="mt-1 text-sm font-medium text-foreground">
+                      <MonospaceLabel className="text-white/50">Database</MonospaceLabel>
+                      <p className="mt-1 text-sm font-medium text-white/90">
                         {project.databaseTechnologies.join(", ")}
                       </p>
                     </div>
@@ -145,13 +164,18 @@ export default async function ProjectDetailPage({ params }: PageProps) {
               </ScrollReveal>
             </div>
 
-            {/* Visual */}
+            {/* Visual column */}
             <ScrollReveal delay={0.15} className="hidden lg:block">
               <ProjectDetailVisual steps={project.systemFlow} />
             </ScrollReveal>
           </div>
         </Container>
       </Section>
+
+      {/* ===== GLOWING TRANSITION DIVIDER ===== */}
+      <div className="relative h-px w-full overflow-hidden bg-border z-10">
+        <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-primary to-transparent animate-[shimmer_3s_ease-in-out_infinite]" style={{ animationDelay: '1s' }} />
+      </div>
 
       {/* ===== OVERVIEW ===== */}
       <Section className="py-12 md:py-16">
@@ -274,22 +298,31 @@ export default async function ProjectDetailPage({ params }: PageProps) {
         </Container>
       </Section>
 
-      {/* ===== SCREENSHOTS ===== */}
-      <Section className="py-12 md:py-16 bg-muted/40">
-        <Container>
-          <ScrollReveal>
-            <div className="text-center mb-10">
-              <MonospaceLabel className="text-primary">Interface</MonospaceLabel>
-              <h2 className="mt-3 text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
-                System Showcase
-              </h2>
-            </div>
-          </ScrollReveal>
-          <ScrollReveal delay={0.1}>
-            <ProjectScreenshotPlaceholder large label="Interface Showcase" />
-          </ScrollReveal>
-        </Container>
-      </Section>
+      {/* ===== SYSTEM SHOWCASE ===== */}
+      {project.heroImage && (
+        <Section className="py-12 md:py-16 bg-muted/40">
+          <Container>
+            <ScrollReveal>
+              <div className="text-center mb-10">
+                <MonospaceLabel className="text-primary">Interface</MonospaceLabel>
+                <h2 className="mt-3 text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+                  System Showcase
+                </h2>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={0.1}>
+              <div className="relative overflow-hidden rounded-xl border border-border shadow-2xl shadow-black/10">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={project.heroImage.src}
+                  alt={project.heroImage.alt}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </ScrollReveal>
+          </Container>
+        </Section>
+      )}
 
       {/* ===== BUSINESS VALUE ===== */}
       {project.valuePoints.length > 0 && (
@@ -357,7 +390,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             <ScrollReveal>
               <MonospaceLabel className="text-primary">Explore More</MonospaceLabel>
               <h2 className="mt-3 text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
-                Explore More Systems
+                Related Systems
               </h2>
             </ScrollReveal>
             <div className="mt-10">
@@ -382,14 +415,14 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             <ScrollReveal delay={0.1}>
               <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
                 <LinkButton
-                  href="/get-started"
+                  href="/get-started/"
                   variant="accent"
                   size="lg"
                 >
                   Start a Project
                 </LinkButton>
                 <LinkButton
-                  href="/projects"
+                  href="/projects/"
                   variant="ghost"
                   size="lg"
                   className="text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"

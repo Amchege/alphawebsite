@@ -22,7 +22,7 @@ if (!$data) {
 }
 
 // PUT YOUR RESEND API KEY HERE
-  $apiKey = 'PASTE_KEY_ON_CPANEL'; 
+  $apiKey = 'PASTE_KEY_ON_CPANEL';
 
  $payload = json_encode([
     'from' => 'Alpha Tec Website <noreply@alphatecdesigns.co.ke>',

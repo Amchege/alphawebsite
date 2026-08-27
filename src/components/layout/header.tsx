@@ -6,10 +6,10 @@ import { usePathname } from 'next/navigation';
 
 const navItems = [
   { label: 'Home', href: '/' },
-  { label: 'Solutions', href: '/solutions' },
-  { label: 'Projects', href: '/projects' },
-  { label: 'Process', href: '/process' },
-  { label: 'Insights', href: '/insights' },
+  { label: 'Solutions', href: '/solutions/' },
+  { label: 'Projects', href: '/projects/' },
+  { label: 'Process', href: '/process/' },
+  { label: 'Insights', href: '/insights/' },
 ];
 
 type WalkPhase = 'idle' | 'appear' | 'walk' | 'disappear';
@@ -72,7 +72,7 @@ export function Header() {
     href === '/' ? pathname === '/' : pathname.startsWith(href);
 
   /* Dark hero pages */
- const darkHeroPaths = ['/', '/insights', '/contact'];
+ const darkHeroPaths = ['/', '/projects', '/insights', '/contact'];
 const isDarkHero = darkHeroPaths.some((p) => {
   if (p === '/') return pathname === '/';
   return pathname.startsWith(p);
