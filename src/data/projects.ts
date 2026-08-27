@@ -177,7 +177,7 @@ export const projects: Project[] = [
     status: "published",
     featured: false,
     order: 4,
-    liveUrl: "#",
+    liveUrl: "https://sbms.alphatecdesigns.co.ke/login",
     challenge: "Salons and barbershops manage a combination of appointments, walk-in clients, staff schedules, service records and inventory. Without a digital system, tracking customer history, managing daily operations and understanding business performance relies on manual processes that don't scale well.",
     solution: "A management platform designed to organize appointments, customer information, services, staff workflows and business reporting in one application. The system provides visibility into daily operations and helps staff manage their work more efficiently.",
     overview: "A client-side management application built with React for salons and barbershops, featuring state management, data visualization and a modern UI.",
