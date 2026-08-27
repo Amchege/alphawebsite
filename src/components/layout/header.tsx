@@ -72,7 +72,7 @@ export function Header() {
     href === '/' ? pathname === '/' : pathname.startsWith(href);
 
   /* Dark hero pages */
- const darkHeroPaths = ['/', '/insights'];
+ const darkHeroPaths = ['/', '/insights', '/contact'];
 const isDarkHero = darkHeroPaths.some((p) => {
   if (p === '/') return pathname === '/';
   return pathname.startsWith(p);
@@ -392,7 +392,7 @@ const isDarkHero = darkHeroPaths.some((p) => {
                   href="/contact"
                   className="inline-flex items-center gap-2 rounded-full px-6 py-2.5 text-[13px] font-semibold text-white bg-orange-500 shadow-lg shadow-orange-500/25 transition-all duration-200 hover:-translate-y-0.5 hover:bg-orange-400 hover:shadow-orange-500/40 active:translate-y-0"
                 >
-                  Start Your Project
+                  Contact Us
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M5 12h14M12 5l7 7-7 7" />
                   </svg>
@@ -473,7 +473,7 @@ const isDarkHero = darkHeroPaths.some((p) => {
                 href="/contact"
                 className="flex w-full items-center justify-center gap-2 rounded-lg bg-orange-500 px-5 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-orange-400"
               >
-                Start Your Project
+                Contact Us
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>

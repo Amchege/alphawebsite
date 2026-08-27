@@ -39,7 +39,7 @@ export default function ContactPage() {
                     <h3 className="text-white font-semibold mb-1">Our Office</h3>
                     <p className="text-slate-400 text-sm leading-relaxed">
                       Nairobi, Kenya<br />
-                      (Physical location details here)
+                      
                     </p>
                   </div>
                 </div>
@@ -66,8 +66,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-white font-semibold mb-1">Call Us</h3>
-                    <a href="tel:+254700000000" className="text-slate-400 text-sm hover:text-orange-400 transition-colors">
-                      +254 700 000 000
+                    <a href="tel:+254723641660" className="text-slate-400 text-sm hover:text-orange-400 transition-colors">
+                      +254 723 641 660
                     </a>
                   </div>
                 </div>
