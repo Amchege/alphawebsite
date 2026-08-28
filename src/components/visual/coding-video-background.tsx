@@ -44,7 +44,7 @@ export function CodingVideoBackground({
     return () => videoElement.removeEventListener("canplaythrough", handleCanPlay);
   }, [isMobile, shouldReduceMotion]);
 
-  // Mobile or reduced motion: static background only
+    // Mobile or reduced motion: static background only
   if (isMobile || shouldReduceMotion) {
     return (
       <div
@@ -52,15 +52,6 @@ export function CodingVideoBackground({
         aria-hidden="true"
       >
         <div className="absolute inset-0 bg-primary" />
-        {poster && (
-          <img
-            src={poster}
-            alt=""
-            className="absolute inset-0 h-full w-full object-cover opacity-20"
-            aria-hidden="true"
-            loading="eager"
-          />
-        )}
         <div
           className="absolute inset-0"
           style={{
