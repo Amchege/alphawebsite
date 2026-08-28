@@ -78,15 +78,16 @@ export default function RootLayout({
             fbq('track', 'PageView');
           `}
         </Script>
+        {/* GA4 */}
+        <GoogleAnalytics gaId="G-CK73F192MY" />
+        {/* GTM */}
+        <GoogleTagManager gtmId="GTM-NC2RZQRN" />
       </head>
       <body className="min-h-screen flex flex-col antialiased">
         <JsonLd data={generateOrganizationSchema()} />
         <JsonLd data={generateWebSiteSchema()} />
         <JsonLd data={generateLocalBusinessSchema()} />
-        {/* GA4 */}
-        <GoogleAnalytics gaId="G-CK73F192MY" />
-        {/* GTM */}
-        <GoogleTagManager gtmId="GTM-NC2RZQRN" />
+      
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
