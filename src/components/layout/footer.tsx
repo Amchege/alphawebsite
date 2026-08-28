@@ -2,10 +2,10 @@ import Link from 'next/link';
 
 /* ── Data ── */
 const solutionLinks = [
-  { label: 'Custom Software', href: '/solutions/custom-software/' },
-  { label: 'Cloud Infrastructure', href: '/solutions/cloud/' },
-  { label: 'Data & Analytics', href: '/solutions/data-analytics/' },
-  { label: 'AI & Automation', href: '/solutions/ai-automation/' },
+  { label: 'Custom Software', href: '/solutions/business-software/' },
+  { label: 'Business Automation', href: '/solutions/business-automation/' },
+  { label: 'Data & Analytics', href: '/solutions/data-business-intelligence/' },
+  { label: 'API Integrations', href: '/solutions/api-integrations/' },
 ];
 
 const resourceLinks = [
@@ -22,7 +22,7 @@ const companyLinks = [
   { label: 'Contact', href: '/contact/' },
 ];
 
-/* ── SVG Icon components (zero dependencies) ── */
+/* ── SVG Icon component (zero dependencies) ── */
 function LinkedInIcon({ className }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="currentColor">
