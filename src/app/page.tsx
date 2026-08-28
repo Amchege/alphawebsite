@@ -1,7 +1,7 @@
 import { generatePageMetadata } from "@/lib/metadata";
 import { JsonLd } from "@/components/seo/json-ld";
 import {
-  generateProfessionalServiceSchema,
+  generateLocalBusinessSchema,
   generateWebPageSchema,
 } from "@/lib/structured-data";
 import { Hero } from "@/components/sections/hero";
@@ -30,7 +30,7 @@ export const metadata = generatePageMetadata({
 export default function HomePage() {
   return (
     <>
-      <JsonLd data={generateProfessionalServiceSchema()} />
+      <JsonLd data={generateLocalBusinessSchema()} />
       <JsonLd data={generateWebPageSchema({ title: pageTitle, description: pageDescription, path: "/" })} />
 
       <Hero />

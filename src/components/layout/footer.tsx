@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { SITE_CONFIG } from "@/config/site";
 
 /* ── Data ── */
 const solutionLinks = [
@@ -172,12 +173,12 @@ export function Footer() {
             {/* Social links */}
             <div className="mt-6 flex items-center gap-2">
               {[
-                { Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/abraham-kariuki/', label: 'LinkedIn' },
-                { Icon: GitHubIcon, href: 'https://github.com/Amchege', label: 'GitHub' },
-                { Icon: FacebookIcon, href: 'https://www.facebook.com/AlphaTec254/', label: 'Facebook' },
-                { Icon: InstagramIcon, href: 'https://www.instagram.com/alphatec254/', label: 'Instagram' },
-                { Icon: TikTokIcon, href: 'https://www.tiktok.com/@alphatec254', label: 'TikTok' },
-              ].map(({ Icon, href, label }) => (
+                  { Icon: LinkedInIcon, href: SITE_CONFIG.social.linkedin, label: 'LinkedIn' },
+                  { Icon: GitHubIcon, href: SITE_CONFIG.social.github, label: 'GitHub' },
+                  ...(SITE_CONFIG.social.facebook ? [{ Icon: FacebookIcon, href: SITE_CONFIG.social.facebook, label: 'Facebook' as const }] : []),
+                  ...(SITE_CONFIG.social.instagram ? [{ Icon: InstagramIcon, href: SITE_CONFIG.social.instagram, label: 'Instagram' as const }] : []),
+                  ...(SITE_CONFIG.social.tiktok ? [{ Icon: TikTokIcon, href: SITE_CONFIG.social.tiktok, label: 'TikTok' as const }] : []),
+                ].filter(Boolean).map(({ Icon, href, label }) => (
                 <a
                   key={label}
                   href={href}

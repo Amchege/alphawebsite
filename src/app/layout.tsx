@@ -7,6 +7,7 @@ import { Footer } from "@/components/layout/footer";
 import { JsonLd } from "@/components/seo/json-ld";
 import {
   generateOrganizationSchema,
+  generateLocalBusinessSchema,
   generateWebSiteSchema,
 } from "@/lib/structured-data";
 import { SITE_CONFIG } from "@/config/site";
@@ -81,6 +82,7 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col antialiased">
         <JsonLd data={generateOrganizationSchema()} />
         <JsonLd data={generateWebSiteSchema()} />
+        <JsonLd data={generateLocalBusinessSchema()} />
         {/* GA4 */}
         <GoogleAnalytics gaId="G-CK73F192MY" />
         {/* GTM */}

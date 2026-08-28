@@ -1,11 +1,11 @@
 export const SITE_CONFIG = {
   name: "Alpha Tec Solutions",
   legalName: "Alpha Tec Designs",
-  url: "https://alphatecdesigns.co.ke/",
+  url: "https://alphatecdesigns.co.ke",
   description:
-    "Full-Stack Software Developer. I design and build business systems that solve real operational problems.",
-  tagline: "Full-Stack Software Developer",
-  locale: "en_US",
+    "Custom software development company in Nairobi, Kenya. We design and build business management systems, web applications, and automation solutions for growing businesses across East Africa.",
+  tagline: "Custom Software Solutions for Growing Businesses",
+  locale: "en_KE",
   location: {
     city: "Nairobi",
     country: "Kenya",
@@ -23,9 +23,9 @@ export const SITE_CONFIG = {
   social: {
     linkedin: "https://www.linkedin.com/in/abraham-kariuki/",
     github: "https://github.com/Amchege",
-    facebook: "",
-    instagram: "",
-    tiktok: "",
+    facebook: "https://www.facebook.com/AlphaTec254/",
+    instagram: "https://www.instagram.com/alphatec254/",
+    tiktok: "https://www.tiktok.com/@alphatec254",
     x: "",
     youtube: "",
   },
