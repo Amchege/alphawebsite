@@ -12,7 +12,7 @@ const resourceLinks = [
   { label: 'Insights & Articles', href: '/insights/' },
   { label: 'Case Studies', href: '/projects/' },
   { label: 'Our Process', href: '/process/' },
-  { label: 'Documentation', href: '/docs/' },
+  { label: 'Tech Hub', href: '/tech-hub/' },
 ];
 
 const companyLinks = [
