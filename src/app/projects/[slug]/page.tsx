@@ -83,7 +83,6 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           />
 
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-14">
-            {/* Text */}
             <div>
               <ScrollReveal>
                 <MonospaceLabel>Case Study</MonospaceLabel>
@@ -99,7 +98,6 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 </p>
               </ScrollReveal>
 
-              {/* Metadata row */}
               <ScrollReveal delay={0.15}>
                 <div className="mt-8 grid grid-cols-2 gap-x-6 gap-y-4">
                   <div>
@@ -140,6 +138,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                   )}
                 </div>
               </ScrollReveal>
+
               {project.liveUrl && project.liveUrl !== "#" && (
                 <div className="mt-6">
                   <a
@@ -159,7 +158,6 @@ export default async function ProjectDetailPage({ params }: PageProps) {
               )}
             </div>
 
-            {/* Visual */}
             <ScrollReveal delay={0.15} className="hidden lg:block">
               <ProjectDetailVisual steps={project.systemFlow} />
             </ScrollReveal>
@@ -183,7 +181,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
         </Container>
       </Section>
 
-      {/* ===== CHALLENGE + SOLUTION SIDE BY SIDE ===== */}
+      {/* ===== CHALLENGE + SOLUTION ===== */}
       <Section className="py-12 md:py-16 bg-muted/40">
         <Container>
           <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
@@ -254,39 +252,42 @@ export default async function ProjectDetailPage({ params }: PageProps) {
         </Section>
       )}
 
-      {/* ===== ARCHITECTURE ===== */}
+      {/* ===== ARCHITECTURE + TECH STACK — side by side ===== */}
       <Section className="py-12 md:py-16">
         <Container>
-          <ScrollReveal>
-            <div className="text-center mb-10">
-              <MonospaceLabel className="text-primary">Under the Hood</MonospaceLabel>
-              <h2 className="mt-3 text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
-                System Architecture
-              </h2>
+          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+            {/* Architecture */}
+            <div>
+              <ScrollReveal>
+                <MonospaceLabel className="text-primary">Under the Hood</MonospaceLabel>
+                <h2 className="mt-3 text-xl font-bold tracking-tight text-foreground sm:text-2xl">
+                  System Architecture
+                </h2>
+              </ScrollReveal>
+              <div className="mt-8">
+                <ProjectArchitectureSection project={project} />
+              </div>
             </div>
-          </ScrollReveal>
-          <ProjectArchitectureSection project={project} />
-        </Container>
-      </Section>
 
-      {/* ===== TECHNOLOGY ===== */}
-      <Section className="py-12 md:py-16 bg-muted/40">
-        <Container>
-          <ScrollReveal>
-            <MonospaceLabel className="text-primary">Tech Stack</MonospaceLabel>
-            <h2 className="mt-3 text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
-              Technologies Used
-            </h2>
-          </ScrollReveal>
-          <div className="mt-10">
-            <ProjectTechStack project={project} />
+            {/* Tech Stack */}
+            <div>
+              <ScrollReveal delay={0.1}>
+                <MonospaceLabel className="text-primary">Tech Stack</MonospaceLabel>
+                <h2 className="mt-3 text-xl font-bold tracking-tight text-foreground sm:text-2xl">
+                  Technologies Used
+                </h2>
+              </ScrollReveal>
+              <div className="mt-8">
+                <ProjectTechStack project={project} />
+              </div>
+            </div>
           </div>
         </Container>
       </Section>
 
-      {/* ===== SYSTEM SHOWCASE — video with image fallback ===== */}
+      {/* ===== SYSTEM SHOWCASE ===== */}
       {project.heroImage && (
-        <Section className="py-12 md:py-16">
+        <Section className="py-12 md:py-16 bg-muted/40">
           <Container>
             <ScrollReveal>
               <div className="text-center mb-10">
@@ -329,64 +330,63 @@ export default async function ProjectDetailPage({ params }: PageProps) {
         </Section>
       )}
 
-      {/* ===== BUSINESS VALUE ===== */}
-      {project.valuePoints.length > 0 && (
-        <Section className="py-12 md:py-16 bg-muted/40">
-          <Container>
-            <div className="mx-auto max-w-3xl">
-              <ScrollReveal>
-                <MonospaceLabel className="text-primary">Business Value</MonospaceLabel>
-                <h2 className="mt-3 text-2xl font-bold tracking-tight text-foreground sm:text-3xl text-balance">
-                  Built to improve the way the business operates
-                </h2>
-              </ScrollReveal>
-              <div className="mt-8 space-y-4">
-                {project.valuePoints.map((point, i) => (
-                  <ScrollReveal key={point} delay={i * 0.06}>
-                    <div className="flex items-start gap-3">
-                      <Check
-                        size={16}
-                        className="mt-0.5 flex-shrink-0 text-primary"
-                        strokeWidth={2}
-                      />
-                      <span className="text-sm text-foreground">{point}</span>
-                    </div>
-                  </ScrollReveal>
-                ))}
+      {/* ===== BUSINESS VALUE + FUTURE IMPROVEMENTS — side by side ===== */}
+      <Section className="py-12 md:py-16">
+        <Container>
+          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+            {/* Business Value */}
+            {project.valuePoints.length > 0 && (
+              <div>
+                <ScrollReveal>
+                  <MonospaceLabel className="text-primary">Business Value</MonospaceLabel>
+                  <h2 className="mt-3 text-xl font-bold tracking-tight text-foreground sm:text-2xl text-balance">
+                    Built to improve the way the business operates
+                  </h2>
+                </ScrollReveal>
+                <div className="mt-8 space-y-4">
+                  {project.valuePoints.map((point, i) => (
+                    <ScrollReveal key={point} delay={i * 0.06}>
+                      <div className="flex items-start gap-3">
+                        <Check
+                          size={16}
+                          className="mt-0.5 flex-shrink-0 text-primary"
+                          strokeWidth={2}
+                        />
+                        <span className="text-sm text-foreground">{point}</span>
+                      </div>
+                    </ScrollReveal>
+                  ))}
+                </div>
               </div>
-            </div>
-          </Container>
-        </Section>
-      )}
+            )}
 
-      {/* ===== FUTURE IMPROVEMENTS ===== */}
-      {project.futureImprovements.length > 0 && (
-        <Section className="py-12 md:py-16">
-          <Container>
-            <div className="mx-auto max-w-3xl">
-              <ScrollReveal>
-                <MonospaceLabel className="text-accent">What&apos;s Next</MonospaceLabel>
-                <h2 className="mt-3 text-2xl font-bold tracking-tight text-foreground sm:text-3xl text-balance">
-                  Potential future improvements
-                </h2>
-                <p className="mt-3 text-sm text-muted-foreground">
-                  These are planned enhancements, not currently implemented features.
-                </p>
-              </ScrollReveal>
-              <div className="mt-8 grid gap-3 sm:grid-cols-2">
-                {project.futureImprovements.map((item, i) => (
-                  <ScrollReveal key={item} delay={i * 0.06}>
-                    <div className="flex items-start gap-3 rounded-lg border border-border bg-card p-4">
-                      <div className="mt-0.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent" />
-                      <span className="text-sm text-foreground">{item}</span>
-                    </div>
-                  </ScrollReveal>
-                ))}
+            {/* Future Improvements */}
+            {project.futureImprovements.length > 0 && (
+              <div>
+                <ScrollReveal delay={0.1}>
+                  <MonospaceLabel className="text-accent">What&apos;s Next</MonospaceLabel>
+                  <h2 className="mt-3 text-xl font-bold tracking-tight text-foreground sm:text-2xl text-balance">
+                    Potential future improvements
+                  </h2>
+                  <p className="mt-3 text-sm text-muted-foreground">
+                    Planned enhancements, not currently implemented features.
+                  </p>
+                </ScrollReveal>
+                <div className="mt-8 grid gap-3 sm:grid-cols-1">
+                  {project.futureImprovements.map((item, i) => (
+                    <ScrollReveal key={item} delay={0.1 + i * 0.06}>
+                      <div className="flex items-start gap-3 rounded-lg border border-border bg-card p-4">
+                        <div className="mt-0.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent" />
+                        <span className="text-sm text-foreground">{item}</span>
+                      </div>
+                    </ScrollReveal>
+                  ))}
+                </div>
               </div>
-            </div>
-          </Container>
-        </Section>
-      )}
+            )}
+          </div>
+        </Container>
+      </Section>
 
       {/* ===== RELATED PROJECTS ===== */}
       {relatedProjects.length > 0 && (
