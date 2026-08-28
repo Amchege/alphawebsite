@@ -72,7 +72,7 @@ export function Header() {
     href === '/' ? pathname === '/' : pathname.startsWith(href);
 
   /* Dark hero pages */
- const darkHeroPaths = ['/', '/insights', '/contact'];
+const darkHeroPaths = ['/', '/get-started', '/insights', '/contact'];
 const isDarkHero = darkHeroPaths.some((p) => {
   if (p === '/') return pathname === '/';
   return pathname.startsWith(p);
@@ -389,7 +389,7 @@ const isDarkHero = darkHeroPaths.some((p) => {
             <div className="flex items-center gap-3 justify-end">
               <span ref={ctaRef} className="hidden sm:inline-flex">
                 <Link
-                  href="/contact"
+                  href="/contact/"
                   className="inline-flex items-center gap-2 rounded-full px-6 py-2.5 text-[13px] font-semibold text-white bg-orange-500 shadow-lg shadow-orange-500/25 transition-all duration-200 hover:-translate-y-0.5 hover:bg-orange-400 hover:shadow-orange-500/40 active:translate-y-0"
                 >
                   Contact Us
@@ -470,7 +470,7 @@ const isDarkHero = darkHeroPaths.some((p) => {
               style={{ transitionDelay: isMobileOpen ? `${navItems.length * 40}ms` : '0ms' }}
             >
               <Link
-                href="/contact"
+                href="/contact/"
                 className="flex w-full items-center justify-center gap-2 rounded-lg bg-orange-500 px-5 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-orange-400"
               >
                 Contact Us
