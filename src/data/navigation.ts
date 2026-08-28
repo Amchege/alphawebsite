@@ -14,21 +14,20 @@ export const footerColumns: FooterColumn[] = [
   {
     title: "Solutions",
     links: [
-      { label: "Business Management Systems", href: "/solutions/business-software" },
-      { label: "Custom Web Applications", href: "/solutions/custom-web-applications" },
-      { label: "SaaS Development", href: "/solutions/saas-development" },
-      { label: "Business Automation", href: "/solutions/business-automation" },
-      { label: "API Integrations", href: "/solutions/api-integrations" },
+      { label: "Custom Software", href: "/solutions/business-software/" },
+      { label: "Business Automation", href: "/solutions/business-automation/" },
+      { label: "Data & Analytics", href: "/solutions/data-business-intelligence/" },
+      { label: "API Integrations", href: "/solutions/api-integrations/" },
     ],
   },
   {
     title: "Company",
     links: [
-      { label: "About", href: "/about" },
-      { label: "Projects", href: "/projects" },
-      { label: "How We Build", href: "/process" },
-      { label: "Insights", href: "/insights" },
-      { label: "Contact", href: "/contact" },
+      { label: "About", href: "/about/" },
+      { label: "Our Process", href: "/process/" },
+      { label: "Insights", href: "/insights/" },
+      { label: "Tech Hub", href: "/tech-hub/" },
+      { label: "Contact", href: "/contact/" },
     ],
   },
 ];
