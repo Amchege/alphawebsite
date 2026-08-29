@@ -61,6 +61,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <head>
+         {/* Preload LCP image */}
+  <link rel="preload" as="image" href="/images/coding-poster.webp" />
   {/* Meta Pixel */}
   {/* eslint-disable-next-line @next/next/no-script-in-head */}
   <script
