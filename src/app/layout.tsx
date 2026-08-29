@@ -84,7 +84,7 @@ export default function RootLayout({
 
   {/* GA4 */}
   {/* eslint-disable-next-line @next/next/no-script-in-head */}
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CK73F192MY" />
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-CK73F192MY" />
   {/* eslint-disable-next-line @next/next/no-script-in-head */}
   <script
     dangerouslySetInnerHTML={{
