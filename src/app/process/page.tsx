@@ -390,7 +390,7 @@ export default function ProcessPage() {
                 <LinkButton href="/get-started?source=process" variant="accent" size="lg">
                   Let&apos;s Talk
                 </LinkButton>
-                <LinkButton href="/contact" variant="secondary" size="lg">
+                <LinkButton href="/contact/" variant="secondary" size="lg">
                   Get in Touch
                 </LinkButton>
               </div>
@@ -450,7 +450,7 @@ export default function ProcessPage() {
                   See our work <ArrowRight size={12} />
                 </Link>
                 <span className="text-primary-foreground/20">â€¢</span>
-                <Link href="/contact" className="transition-colors hover:text-primary-foreground">
+                <Link href="/contact/" className="transition-colors hover:text-primary-foreground">
                   Contact us
                 </Link>
               </div>

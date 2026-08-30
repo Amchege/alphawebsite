@@ -42,7 +42,7 @@ export function FinalCtaSection() {
                 Start a Project
               </LinkButton>
               <LinkButton
-                href="/contact"
+                href="/contact/"
                 variant="ghost"
                 size="lg"
                 className="text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground border-primary-foreground/30"

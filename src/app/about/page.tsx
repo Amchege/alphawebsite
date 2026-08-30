@@ -441,7 +441,7 @@ export default function AboutPage() {
                   See our work <ArrowRight size={12} />
                 </Link>
                 <span className="text-primary-foreground/20">â€¢</span>
-                <Link href="/contact" className="transition-colors hover:text-primary-foreground">
+                <Link href="/contact/" className="transition-colors hover:text-primary-foreground">
                   Contact us
                 </Link>
               </div>

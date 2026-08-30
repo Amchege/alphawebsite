@@ -206,7 +206,7 @@ export default function TechHubPage() {
                   <ArrowRight size={16} />
                 </Link>
                 <Link
-                  href="/contact"
+                  href="/contact/"
                   className="inline-flex items-center gap-2 rounded-lg border border-primary-foreground/30 px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary-foreground/10"
                 >
                   Get in Touch

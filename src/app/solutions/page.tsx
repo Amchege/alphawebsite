@@ -391,7 +391,7 @@ export default function SolutionsPage() {
               >
                 Start a Project
               </LinkButton>
-              <LinkButton href="/contact" variant="secondary" size="lg">
+              <LinkButton href="/contact/" variant="secondary" size="lg">
                 Contact Us
               </LinkButton>
             </div>
