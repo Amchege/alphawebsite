@@ -7,4 +7,4 @@
 :HL["/images/projects/property-management.jpg","image"]
 :HL["/images/projects/school-management.jpg","image"]
 :HL["/images/projects/car-wash.jpg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"projects","param":null,"prefetchHints":4160,"slots":{"children":{"name":"slug","param":{"type":"d","key":"salon-barbershop-management-system","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"BCnbVciJsIiEvhp3mnpU4"}
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"projects","param":null,"prefetchHints":4160,"slots":{"children":{"name":"slug","param":{"type":"d","key":"salon-barbershop-management-system","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"Hg1vhQnxRV4Rgc1jg5eRv"}

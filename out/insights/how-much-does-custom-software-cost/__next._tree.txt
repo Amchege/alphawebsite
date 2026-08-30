@@ -3,4 +3,4 @@
 :HL["/_next/static/media/83afe278b6a6bb3c-s.p.2bn3s6zvc0dyp.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/images/coding-poster.webp","image"]
 :HL["/images/logo-light-bg.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"insights","param":null,"prefetchHints":4160,"slots":{"children":{"name":"slug","param":{"type":"d","key":"how-much-does-custom-software-cost","siblings":["category"]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"BCnbVciJsIiEvhp3mnpU4"}
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"insights","param":null,"prefetchHints":4160,"slots":{"children":{"name":"slug","param":{"type":"d","key":"how-much-does-custom-software-cost","siblings":["category"]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"Hg1vhQnxRV4Rgc1jg5eRv"}
