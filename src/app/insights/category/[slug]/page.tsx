@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${cat.name} Insights | Alpha Tec Solutions`,
     description: cat.description,
-    alternates: { canonical: `https://alphatecsolutions.com/insights/category/${cat.slug}` },
+    alternates: { canonical: `https://alphatecdesigns.co.ke/insights/category/${cat.slug}` },
   };
 }
 

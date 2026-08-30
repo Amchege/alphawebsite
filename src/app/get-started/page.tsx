@@ -10,10 +10,10 @@ export const metadata: Metadata = {
     description:
       'Tell us about your business challenge. We build custom software systems that automate operations.',
     type: 'website',
-    url: 'https://alphatecsolutions.com/get-started',
+    url: 'https://alphatecdesigns.co.ke/get-started',
   },
   alternates: {
-    canonical: 'https://alphatecsolutions.com/get-started',
+    canonical: 'https://alphatecdesigns.co.ke/get-started',
   },
 };
 

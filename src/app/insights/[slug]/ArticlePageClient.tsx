@@ -73,7 +73,7 @@ export function ArticlePageClient({
     return () => observer.disconnect();
   }, [tocItems]);
 
-  const articleUrl = `https://alphatecsolutions.com/insights/${article.slug}`;
+  const articleUrl = `https://alphatecdesigns.co.ke/insights/${article.slug}`;
 
   return (
     <main className="bg-slate-950 min-h-screen">

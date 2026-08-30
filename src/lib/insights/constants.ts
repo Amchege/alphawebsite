@@ -78,13 +78,13 @@ export const INSIGHTS_TOPICS: Topic[] = [
 
 export const ALPHA_TEC_AUTHORS: Author[] = [
   {
-    name: 'Alpha Tec Solutions',
+    name: 'Abraham Kariuki, Alpha Tec Solutions',
     role: 'Full-Stack Software Development Team',
     bio: 'We build custom business software, management systems, and web applications that solve real operational problems.',
-    image: '/images/team/alpha-tec-default.jpg',
-    linkedin: 'https://linkedin.com/company/alpha-tec-solutions',
-    github: 'https://github.com/alpha-tec-solutions',
-    website: 'https://alphatecsolutions.com',
+    image: '/images/team/abraham.jpg',
+    linkedin: 'https://www.linkedin.com/in/abraham-kariuki/',
+    github: 'https://github.com/Amchege',
+    website: 'https://alphatecdesigns.co.ke/',
   },
 ];
 

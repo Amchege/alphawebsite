@@ -70,14 +70,14 @@ export function generateArticleSchema(article: Insight) {
       name: 'Alpha Tec Solutions',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://alphatecsolutions.com/images/logo.png',
+        url: 'https://alphatecdesigns.co.ke/images/logo.png',
       },
     },
     datePublished: article.publishedAt,
     dateModified: article.updatedAt || article.publishedAt,
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://alphatecsolutions.com/insights/${article.slug}`,
+      '@id': `https://alphatecdesigns.co.ke/insights/${article.slug}`,
     },
   };
 }

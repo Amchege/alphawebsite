@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     description:
       'Practical perspectives on building business software, automating workflows, and designing digital systems.',
     type: 'website',
-    url: 'https://alphatecsolutions.com/insights',
+    url: 'https://alphatecdesigns.co.ke/insights',
   },
   alternates: {
-    canonical: 'https://alphatecsolutions.com/insights',
+    canonical: 'https://alphatecdesigns.co.ke/insights',
   },
 };
 
