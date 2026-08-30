@@ -1,64 +1,28 @@
-# ============================================
-# TRAILING SLASH & ROUTING FIXES
-# ============================================
 <IfModule mod_rewrite.c>
-  RewriteEngine On
-
-  # Force trailing slash on directory paths (fixes /contact -> /contact/)
-  DirectorySlash On
-
-  # If requesting without trailing slash, not a file, and no extension - add slash
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_URI} !(.*)/$   RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]+$   RewriteRule ^(.*)$ /$1/ [L,R=301]
-
-  # Handle Next.js static routing - serve index.html for directories
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^(.*)$ /$1/index.html [L,QSA]
-
-  # Custom 404
-  ErrorDocument 404 /404.html
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_URI} !(.*)/$ RewriteRule ^(.*)$ /$1/index.html [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /$1/index.html [L,QSA]
+ErrorDocument 404 /404.html
 </IfModule>
-
-# ============================================
-# BROWSER CACHING
-# ============================================
 <IfModule mod_expires.c>
-  ExpiresActive On
-  
-  # Images - cache 1 year
-  ExpiresByType image/webp "access plus 1 year"
-  ExpiresByType image/png "access plus 1 year"
-  ExpiresByType image/jpeg "access plus 1 year"
-  ExpiresByType image/svg+xml "access plus 1 year"
-  ExpiresByType image/gif "access plus 1 year"
-  ExpiresByType image/x-icon "access plus 1 month"
-  
-  # CSS & JS - cache 1 year (filename has hash)
-  ExpiresByType text/css "access plus 1 year"
-  ExpiresByType application/javascript "access plus 1 year"
-  ExpiresByType text/javascript "access plus 1 year"
-  
-  # Fonts - cache 1 year
-  ExpiresByType font/woff2 "access plus 1 year"
-  ExpiresByType font/woff "access plus 1 year"
-  
-  # HTML - cache 1 hour (allows quick updates)
-  ExpiresByType text/html "access plus 1 hour"
-  
-  # Sitemap - cache 1 hour
-  ExpiresByType application/xml "access plus 1 hour"
+ExpiresActive On
+ExpiresByType image/webp "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/svg+xml "access plus 1 year"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/x-icon "access plus 1 month"
+ExpiresByType text/css "access plus 1 year"
+ExpiresByType application/javascript "access plus 1 year"
+ExpiresByType text/javascript "access plus 1 year"
+ExpiresByType font/woff2 "access plus 1 year"
+ExpiresByType font/woff "access plus 1 year"
+ExpiresByType text/html "access plus 1 hour"
+ExpiresByType application/xml "access plus 1 hour"
 </IfModule>
-
-<IfModule mod_headers.c>
-  <FilesMatch "\.(webp|png|jpg|jpeg|gif|svg|ico|css|js|woff2|woff)$">
-    Header set Cache-Control "public, immutable"
-  </FilesMatch>
-</IfModule>
-
-# ============================================
-# COMPRESSION
-# ============================================
 <IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml
+AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml
 </IfModule>
