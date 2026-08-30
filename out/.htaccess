@@ -1,3 +1,28 @@
+# ============================================
+# TRAILING SLASH & ROUTING FIXES
+# ============================================
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Force trailing slash on directory paths (fixes /contact -> /contact/)
+  DirectorySlash On
+
+  # If requesting without trailing slash, not a file, and no extension - add slash
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_URI} !(.*)/$   RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]+$   RewriteRule ^(.*)$ /$1/ [L,R=301]
+
+  # Handle Next.js static routing - serve index.html for directories
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ /$1/index.html [L,QSA]
+
+  # Custom 404
+  ErrorDocument 404 /404.html
+</IfModule>
+
+# ============================================
+# BROWSER CACHING
+# ============================================
 <IfModule mod_expires.c>
   ExpiresActive On
   
@@ -31,7 +56,9 @@
   </FilesMatch>
 </IfModule>
 
-# Compress text assets
+# ============================================
+# COMPRESSION
+# ============================================
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml
 </IfModule>
