@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const cat = getCategoryBySlug(slug);
   if (!cat) return { title: 'Category Not Found' };
   return {
-    title: `${cat.name} Insights | Alpha Tec Solutions`,
+    title: `${cat.name} Insights `,
     description: cat.description,
     alternates: { canonical: `https://alphatecdesigns.co.ke/insights/category/${cat.slug}` },
   };

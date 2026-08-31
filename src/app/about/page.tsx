@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { generatePageMetadata } from "@/lib/metadata";
@@ -57,7 +57,7 @@ const heroPaths = [
 ];
 
 export const metadata = generatePageMetadata({
-  title: "About Alpha Tec Solutions | Full-Stack Software Development",
+  title: "About Us | Full-Stack Software Development",
   description:
     "Learn about Alpha Tec Solutions, a Kenya-based full-stack software development practice building custom business software, web applications and digital systems for businesses globally.",
   path: "/about",
@@ -191,7 +191,7 @@ export default function AboutPage() {
                 From Interface to Infrastructure
               </h2>
               <p className="mt-4 text-base text-muted-foreground">
-                We handle the full software stack â€” from user interfaces and application logic to databases, APIs and system integrations.
+                We handle the full software stack — from user interfaces and application logic to databases, APIs and system integrations.
               </p>
             </ScrollReveal>
           </div>
@@ -346,14 +346,14 @@ export default function AboutPage() {
                 Technology Is the Tool. The Business Problem Is the Starting Point.
               </h2>
               <p className="mt-4 text-base text-muted-foreground">
-                We choose technologies based on what the project requires â€” performance, maintainability, security and long-term support â€” not because they are trending.
+                We choose technologies based on what the project requires — performance, maintainability, security and long-term support — not because they are trending.
               </p>
             </ScrollReveal>
           </div>
         </Container>
       </Section>
 
-      {/* ===== CODE â†’ SYSTEM VISUAL ===== */}
+      {/* ===== CODE → SYSTEM VISUAL ===== */}
       <Section className="py-12 md:py-16">
         <Container>
           <div className="mx-auto max-w-3xl text-center">
@@ -440,7 +440,7 @@ export default function AboutPage() {
                 <Link href="/projects" className="flex items-center gap-1.5 transition-colors hover:text-primary-foreground">
                   See our work <ArrowRight size={12} />
                 </Link>
-                <span className="text-primary-foreground/20">â€¢</span>
+                <span className="text-primary-foreground/20">•</span>
                 <Link href="/contact/" className="transition-colors hover:text-primary-foreground">
                   Contact us
                 </Link>

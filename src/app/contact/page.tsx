@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Alpha Tec Solutions",
+  title: "Contact Us",
   description: "Get in touch with Alpha Tec Solutions. Find our office location in Nairobi, Kenya, or reach out via email and phone.",
 };
 

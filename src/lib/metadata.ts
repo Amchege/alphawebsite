@@ -27,7 +27,7 @@ export function generatePageMetadata({
   modifiedTime,
 }: PageMetadataOptions): Metadata {
   const url = `${SITE_CONFIG.url}${path}`;
-  const fullTitle = path === "/" ? title : `${title} | ${SITE_CONFIG.name}`;
+  const fullTitle = path === "/" ? title : `${title}`;
 
   return {
     title: fullTitle,

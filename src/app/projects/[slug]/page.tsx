@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!project) return {};
 
   return generatePageMetadata({
-    title: `${project.title} | Alpha Tec Solutions`,
+    title: `${project.title} `,
     description: project.seo.description,
     path: `/projects/${project.slug}/`,
   });
