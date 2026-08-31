@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter } from "next/font/google";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
@@ -15,6 +16,7 @@ const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-inter",
+  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -59,66 +61,51 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={inter.variable} suppressHydrationWarning>
       <head>
-         {/* Preload LCP image */}
-  <link rel="preload" as="image" href="/images/coding-poster.webp" />
-  {/* Meta Pixel */}
-  {/* eslint-disable-next-line @next/next/no-script-in-head */}
-  <script
-    dangerouslySetInnerHTML={{
-      __html: `
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '672113158769223');
-        fbq('track', 'PageView');
-      `,
-    }}
-  />
-
-  {/* GA4 */}
-  {/* eslint-disable-next-line @next/next/no-script-in-head */}
-  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-CK73F192MY" />
-  {/* eslint-disable-next-line @next/next/no-script-in-head */}
-  <script
-    dangerouslySetInnerHTML={{
-      __html: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-CK73F192MY');
-      `,
-    }}
-  />
-
-  {/* GTM */}
-  {/* eslint-disable-next-line @next/next/no-script-in-head */}
-  <script
-    dangerouslySetInnerHTML={{
-      __html: `
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-NC2RZQRN');
-      `,
-    }}
-  />
-</head>
+        <link
+          rel="preload"
+          as="image"
+          href="/images/coding-poster.webp"
+          fetchPriority="high"
+        />
+      </head>
       <body className="min-h-screen flex flex-col antialiased">
         <JsonLd data={generateOrganizationSchema()} />
         <JsonLd data={generateWebSiteSchema()} />
         <JsonLd data={generateLocalBusinessSchema()} />
-      
+
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+
+        <Script id="meta-pixel" strategy="afterInteractive">
+          {`
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '672113158769223');
+            fbq('track', 'PageView');
+          `}
+        </Script>
+
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-CK73F192MY"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-config" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-CK73F192MY');
+          `}
+        </Script>
       </body>
     </html>
   );
