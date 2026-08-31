@@ -34,12 +34,12 @@ export const metadata: Metadata = {
     locale: SITE_CONFIG.locale,
     url: SITE_CONFIG.url,
     siteName: SITE_CONFIG.name,
-    title: "`${SITE_CONFIG.name} | `${SITE_CONFIG.tagline}",
+    title: `${SITE_CONFIG.name} | ${SITE_CONFIG.tagline}`,
     description: SITE_CONFIG.description,
   },
   twitter: {
     card: "summary",
-    title: "`${SITE_CONFIG.name} | `${SITE_CONFIG.tagline}",
+    title: `${SITE_CONFIG.name} | ${SITE_CONFIG.tagline}`,
     description: SITE_CONFIG.description,
   },
   robots: {
