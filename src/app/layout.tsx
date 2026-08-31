@@ -1,5 +1,4 @@
-import type { Metadata } from "next";
-import Script from "next/script";
+﻿import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
@@ -10,6 +9,7 @@ import {
   generateWebSiteSchema,
 } from "@/lib/structured-data";
 import { SITE_CONFIG } from "@/config/site";
+import { TrackingScripts } from "@/components/tracking-scripts";
 import "./globals.css";
 
 const inter = Inter({
@@ -21,8 +21,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: `${SITE_CONFIG.name} | ${SITE_CONFIG.tagline}`,
-    template: `%s | ${SITE_CONFIG.name}`,
+    default: "`${SITE_CONFIG.name} | `${SITE_CONFIG.tagline}",
+    template: "%s | `${SITE_CONFIG.name}",
   },
   description: SITE_CONFIG.description,
   metadataBase: new URL(SITE_CONFIG.url),
@@ -34,12 +34,12 @@ export const metadata: Metadata = {
     locale: SITE_CONFIG.locale,
     url: SITE_CONFIG.url,
     siteName: SITE_CONFIG.name,
-    title: `${SITE_CONFIG.name} | ${SITE_CONFIG.tagline}`,
+    title: "`${SITE_CONFIG.name} | `${SITE_CONFIG.tagline}",
     description: SITE_CONFIG.description,
   },
   twitter: {
     card: "summary",
-    title: `${SITE_CONFIG.name} | ${SITE_CONFIG.tagline}`,
+    title: "`${SITE_CONFIG.name} | `${SITE_CONFIG.tagline}",
     description: SITE_CONFIG.description,
   },
   robots: {
@@ -78,34 +78,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
-
-        <Script id="meta-pixel" strategy="afterInteractive">
-          {`
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '672113158769223');
-            fbq('track', 'PageView');
-          `}
-        </Script>
-
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-CK73F192MY"
-          strategy="afterInteractive"
-        />
-        <Script id="ga4-config" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-CK73F192MY');
-          `}
-        </Script>
+        <TrackingScripts />
       </body>
     </html>
   );
